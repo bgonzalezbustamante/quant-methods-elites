@@ -121,6 +121,6 @@ names(anonymised_data)[29] = "cabinet_chief"
 names(anonymised_data)[30] = "party_leader"
 
 ## Save File
-write.csv(anonymised_data, "data/elite_survey_2010.csv", fileEncoding = "UTF-8", row.names =  FALSE)
-write.csv(anonymised_data, "../women-trajectories/data/elite_survey_2010.csv",
+write.csv(anonymised_data, "data/tidy/elite_survey_2010.csv", fileEncoding = "UTF-8", row.names =  FALSE)
+write.csv(anonymised_data, "../women-trajectories/data/tidy/elite_survey_2010.csv",
           fileEncoding = "UTF-8", row.names =  FALSE)
