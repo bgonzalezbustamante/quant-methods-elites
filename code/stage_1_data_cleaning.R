@@ -59,8 +59,6 @@ elite_data$mother <- ifelse(elite_data$P33.2_REC1 == test2 | elite_data$P33.2_RE
                                                         ifelse(elite_data$P33.2_REC6 == test2 | elite_data$P33.2_REC6 == test1[2] | elite_data$P33.2_REC6 == test1[3] | elite_data$P33.2_REC6 == test1[4], 1,
                                                                ifelse(elite_data$P33.2_REC7 == test2 | elite_data$P33.2_REC7 == test1[2] | elite_data$P33.2_REC7 == test1[3] | elite_data$P33.2_REC7 == test1[4], 1, 0)))))))
 
-
-
 elite_data$father[is.na(elite_data$father)] <- 0
 elite_data$mother[is.na(elite_data$mother)] <- 0
 elite_data$parents <- ifelse(elite_data$father == 1, 1, ifelse(elite_data$mother == 1, 1, 0))
