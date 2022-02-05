@@ -87,39 +87,40 @@ sum(elite_data$J_GB - elite_data$MINISTRO)
 
 ## +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-elite_data$Año_nacimiento
-elite_data$p5_1
-elite_data$p5_2
-elite_data$p5_3
-elite_data$p5_4
-
-anonymised_data <- select(elite_data, id, Sexo, CARGOS, P24_REC, parents, P6.1, P6.2, P6.3,
-                          P6.4, P6.5, P6.6, P6.7, P6.8, P6.9, PRESIDENTE, MINISTRO,
-                          SENADOR, DIPUTADO, SUBSECRETARIO, INTENDENTE, AUTORID..ECO..REG.,
-                          JEFES.GAB..O.DIV., MIEMBROS.MESAS.DIR..PP)
+anonymised_data <- select(elite_data, id, Sexo, Año_nacimiento, CARGOS, P24_REC, parents,
+                          p5_1, p5_2, p5_3, p5_4, P6.1, P6.2, P6.3, P6.4, P6.5, P6.6, P6.7,
+                          P6.8, P6.9, PRESIDENTE, MINISTRO, SENADOR, DIPUTADO, SUBSECRETARIO,
+                          INTENDENTE, AUTORID..ECO..REG., JEFES.GAB..O.DIV.,
+                          MIEMBROS.MESAS.DIR..PP)
 names(anonymised_data)[2] = "sex"
-names(anonymised_data)[3] = "political_capital"
-names(anonymised_data)[4] = "education"
-names(anonymised_data)[5] = "family_capital"
-names(anonymised_data)[6] = "t1"
-names(anonymised_data)[7] = "t2"
-names(anonymised_data)[8] = "t3"
-names(anonymised_data)[9] = "t4"
-names(anonymised_data)[10] = "t5"
-names(anonymised_data)[11] = "t6"
-names(anonymised_data)[12] = "t7"
-names(anonymised_data)[13] = "t8"
-names(anonymised_data)[14] = "t9"
-names(anonymised_data)[15] = "president"
-names(anonymised_data)[16] = "minister"
-names(anonymised_data)[17] = "senator"
-names(anonymised_data)[18] = "deputy"
-names(anonymised_data)[19] = "undersecretary"
-names(anonymised_data)[20] = "intendant"
-names(anonymised_data)[21] = "ceo"
-names(anonymised_data)[22] = "cabinet_chief"
-names(anonymised_data)[23] = "party_leader"
+names(anonymised_data)[3] = "dob"
+names(anonymised_data)[4] = "political_capital"
+names(anonymised_data)[5] = "education"
+names(anonymised_data)[6] = "family_capital"
+names(anonymised_data)[7] = "party1"
+names(anonymised_data)[8] = "party2"
+names(anonymised_data)[9] = "party3"
+names(anonymised_data)[10] = "party4"
+names(anonymised_data)[11] = "t1"
+names(anonymised_data)[12] = "t2"
+names(anonymised_data)[13] = "t3"
+names(anonymised_data)[14] = "t4"
+names(anonymised_data)[15] = "t5"
+names(anonymised_data)[16] = "t6"
+names(anonymised_data)[17] = "t7"
+names(anonymised_data)[18] = "t8"
+names(anonymised_data)[19] = "t9"
+names(anonymised_data)[20] = "president"
+names(anonymised_data)[21] = "minister"
+names(anonymised_data)[22] = "senator"
+names(anonymised_data)[23] = "deputy"
+names(anonymised_data)[24] = "undersecretary"
+names(anonymised_data)[25] = "intendant"
+names(anonymised_data)[26] = "ceo"
+names(anonymised_data)[27] = "cabinet_chief"
+names(anonymised_data)[28] = "party_leader"
 
 ## Save File
-write.csv(anonymised_data, "data/reshuffles_ncm_pm_power.csv", fileEncoding = "UTF-8", row.names =  FALSE)
-
+write.csv(anonymised_data, "data/elite_survey_2010.csv", fileEncoding = "UTF-8", row.names =  FALSE)
+write.csv(anonymised_data, "../women-trajectories/data/elite_survey_2010.csv",
+          fileEncoding = "UTF-8", row.names =  FALSE)
