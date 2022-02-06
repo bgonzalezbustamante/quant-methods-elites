@@ -5,17 +5,24 @@ All notable changes to "Quantitative and Mixed Methods for Studying Elites" will
 
 ## [1.0.0] - TBC
 ### Added
-- Data set in CSV UTF-8 format.
+- GLMs code.
+- Cox models code.
 ### Changed
+- QCA code.
 - Minor corrections.
 
 ## [Released]
+
+## [0.3.0] - 2022-02-06
+### Added
+- QCA code.
 
 ## [0.2.0] - 2022-02-05
 ### Added
 - GitHub repository.
 - README in MD format on GitHub repository.
 - Elite survey data cleaning code.
+- Data set in CSV UTF-8 format.
 - Changelog in MD format on GitHub repository.
 - License CC-BY Attribution 4.0 International on GitHub repository.
 - Badges in SVG on GitHub repository.
