@@ -5,17 +5,16 @@ All notable changes to "Quantitative and Mixed Methods for Studying Elites" will
 
 ## [1.0.0] - TBC
 ### Added
-- GLMs code.
 - Cox models code.
+- SAOM code.
 ### Changed
-- QCA code.
 - Minor corrections.
 
 ## [Released]
 
 ## [0.3.0] - 2022-02-06
 ### Added
-- QCA code.
+- GLMs code.
 
 ## [0.2.0] - 2022-02-05
 ### Added
