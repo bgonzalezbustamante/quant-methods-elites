@@ -125,6 +125,33 @@ model_6 <- glm(senator ~ I(exp_business) + I(sex) + as.factor(pol_cap) + edu
                              | elite_data$party_leader == 1), family = "binomial")
 
 ## Code PSA (under embargo)
+source("../secured-data/qmm-elites/stage_2_psa_embargo.R")
+
+## Standardised and Absolute Mean Differences
+png("results/figures/figure_01.png", width = (1024*2), height = (768*2), units = 'px', res = 300)
+love.plot(m_out_1, stat = "mean.diffs", poly = 1, abs = TRUE,
+          drop.distance = TRUE, thresholds = c(m = .1),
+          var.order = "unadjusted",
+          shapes = c("square filled", "triangle filled"),
+          colors = c("black", "black"),
+          var.names = loveplot_var_1,
+          sample.names = c("Sin Matching", "Full Matching"),
+          line = FALSE, stars = "none", title = NULL) + theme_minimal(base_size = 12) +
+  theme(plot.margin = unit(c(0.5,0.5,0.5,0.5), "cm"), legend.title = element_blank()) + xlab(NULL)
+dev.off()
+
+## Standardised and Absolute Mean Differences
+png("results/figures/figure_02.png", width = (1024*2), height = (768*2), units = 'px', res = 300)
+love.plot(m_out_2, stat = "mean.diffs", poly = 1, abs = TRUE,
+          drop.distance = TRUE, thresholds = c(m = .1),
+          var.order = "unadjusted",
+          shapes = c("square filled", "triangle filled"),
+          colors = c("black", "black"),
+          var.names = loveplot_var_2,
+          sample.names = c("Sin Matching", "Full Matching"),
+          line = FALSE, stars = "none", title = NULL) + theme_minimal(base_size = 12) +
+  theme(plot.margin = unit(c(0.5,0.5,0.5,0.5), "cm"), legend.title = element_blank()) + xlab(NULL)
+dev.off()
 
 ## Check Multicollinearity
 performance::check_collinearity(model_4)
