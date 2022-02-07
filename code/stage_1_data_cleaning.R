@@ -4,7 +4,7 @@
 
 ## +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-## Data Cleaning Code Chilean Elites Surveys
+## Data Cleaning Code Chilean Elite Survey 1990-2010
 ## R version 4.1.0 (2021-05-18) -- "Camp Pontanezen"
 ## Date: February 2022
 
