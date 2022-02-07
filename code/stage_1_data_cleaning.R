@@ -85,40 +85,42 @@ sum(elite_data$J_GB - elite_data$MINISTRO)
 
 ## +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-anonymised_data <- select(elite_data, id, Sexo, Año_nacimiento, CARGOS, P24_REC, parents,
-                          father, mother, p5_1, p5_2, p5_3, p5_4, P6.1, P6.2, P6.3, P6.4,
-                          P6.5, P6.6, P6.7, P6.8, P6.9, PRESIDENTE, MINISTRO, SENADOR,
-                          DIPUTADO, SUBSECRETARIO, INTENDENTE, AUTORID..ECO..REG.,
+anonymised_data <- select(elite_data, id, Sexo, Año_nacimiento, CARGOS, P24_REC, P25.3_REC,
+                          parents, father, mother, p5_1, p5_2, p5_3, p5_4, P6.1, P6.2, P6.3,
+                          P6.4, P6.5, P6.6, P6.7, P6.8, P6.9, P6_REC2,PRESIDENTE, MINISTRO,
+                          SENADOR, DIPUTADO, SUBSECRETARIO, INTENDENTE, AUTORID..ECO..REG.,
                           JEFES.GAB..O.DIV., MIEMBROS.MESAS.DIR..PP)
 names(anonymised_data)[2] = "sex"
 names(anonymised_data)[3] = "dob"
 names(anonymised_data)[4] = "political_capital"
 names(anonymised_data)[5] = "education"
-names(anonymised_data)[6] = "family_capital"
-names(anonymised_data)[7] = "capital_father"
-names(anonymised_data)[8] = "capital_mother"
-names(anonymised_data)[9] = "party1"
-names(anonymised_data)[10] = "party2"
-names(anonymised_data)[11] = "party3"
-names(anonymised_data)[12] = "party4"
-names(anonymised_data)[13] = "t1"
-names(anonymised_data)[14] = "t2"
-names(anonymised_data)[15] = "t3"
-names(anonymised_data)[16] = "t4"
-names(anonymised_data)[17] = "t5"
-names(anonymised_data)[18] = "t6"
-names(anonymised_data)[19] = "t7"
-names(anonymised_data)[20] = "t8"
-names(anonymised_data)[21] = "t9"
-names(anonymised_data)[22] = "president"
-names(anonymised_data)[23] = "minister"
-names(anonymised_data)[24] = "senator"
-names(anonymised_data)[25] = "deputy"
-names(anonymised_data)[26] = "undersecretary"
-names(anonymised_data)[27] = "intendant"
-names(anonymised_data)[28] = "ceo"
-names(anonymised_data)[29] = "cabinet_chief"
-names(anonymised_data)[30] = "party_leader"
+names(anonymised_data)[6] = "school"
+names(anonymised_data)[7] = "family_capital"
+names(anonymised_data)[8] = "capital_father"
+names(anonymised_data)[9] = "capital_mother"
+names(anonymised_data)[10] = "party_1"
+names(anonymised_data)[11] = "party_2"
+names(anonymised_data)[12] = "party_3"
+names(anonymised_data)[13] = "party_4"
+names(anonymised_data)[14] = "t1"
+names(anonymised_data)[15] = "t2"
+names(anonymised_data)[16] = "t3"
+names(anonymised_data)[17] = "t4"
+names(anonymised_data)[18] = "t5"
+names(anonymised_data)[19] = "t6"
+names(anonymised_data)[20] = "t7"
+names(anonymised_data)[21] = "t8"
+names(anonymised_data)[22] = "t9"
+names(anonymised_data)[23] = "exp_business"
+names(anonymised_data)[24] = "president"
+names(anonymised_data)[25] = "minister"
+names(anonymised_data)[26] = "senator"
+names(anonymised_data)[27] = "deputy"
+names(anonymised_data)[28] = "undersecretary"
+names(anonymised_data)[29] = "intendant"
+names(anonymised_data)[30] = "ceo"
+names(anonymised_data)[31] = "cabinet_chief"
+names(anonymised_data)[32] = "party_leader"
 
 ## Save File
 write.csv(anonymised_data, "data/tidy/elite_survey_2010.csv", fileEncoding = "UTF-8", row.names =  FALSE)
