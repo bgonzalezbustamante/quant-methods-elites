@@ -1,29 +1,33 @@
 
-<table style="text-align:center"><caption><strong>Determinantes de carrera destacada (Modelos lineales generalizados)</strong></caption>
-<tr><td colspan="5" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td><strong>minister</strong></td><td><strong>senator</strong></td><td><strong>minister</strong></td><td><strong>senator</strong></td></tr>
-<tr><td style="text-align:left"></td><td><strong>Model 1</strong></td><td><strong>Model 2</strong></td><td><strong>Model 3</strong></td><td><strong>Model 4</strong></td></tr>
-<tr><td colspan="5" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">I(exp_business)</td><td>0.333</td><td>-1.843<sup>*</sup></td><td>0.254</td><td></td></tr>
-<tr><td style="text-align:left"></td><td>(0.418)</td><td>(1.119)</td><td>(0.476)</td><td></td></tr>
-<tr><td style="text-align:left">I(sex)Mujer</td><td>0.534</td><td>-32.476</td><td></td><td></td></tr>
-<tr><td style="text-align:left"></td><td>(0.397)</td><td>(5165.310)</td><td></td><td></td></tr>
-<tr><td style="text-align:left">as.factor(pol_cap)0.33</td><td>-0.268</td><td>-19.789</td><td></td><td></td></tr>
-<tr><td style="text-align:left"></td><td>(0.710)</td><td>(7456.272)</td><td></td><td></td></tr>
-<tr><td style="text-align:left">I(exp_business == "Sí")</td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">as.factor(pol_cap)0.67</td><td>0.030</td><td>-1.209</td><td></td><td>-0.461</td></tr>
-<tr><td style="text-align:left"></td><td>(0.828)</td><td>(1.394)</td><td></td><td>(13160.590)</td></tr>
-<tr><td style="text-align:left">as.factor(pol_cap)1</td><td>1.437<sup>***</sup></td><td>0.448</td><td></td><td>17.594</td></tr>
-<tr><td style="text-align:left"></td><td>(0.403)</td><td>(0.954)</td><td></td><td>(13612.160)</td></tr>
-<tr><td style="text-align:left">edu</td><td>0.997<sup>*</sup></td><td>-1.647</td><td>-0.886</td><td>1.780</td></tr>
-<tr><td style="text-align:left"></td><td>(0.586)</td><td>(1.246)</td><td>(0.990)</td><td>(2.285)</td></tr>
-<tr><td style="text-align:left">priv_school</td><td>0.129</td><td>0.427</td><td>0.334</td><td></td></tr>
-<tr><td style="text-align:left"></td><td>(0.321)</td><td>(0.679)</td><td>(0.520)</td><td></td></tr>
-<tr><td style="text-align:left">as.factor(family_capital)1</td><td>0.567</td><td>1.019</td><td></td><td></td></tr>
-<tr><td style="text-align:left"></td><td>(0.434)</td><td>(0.699)</td><td></td><td></td></tr>
-<tr><td style="text-align:left">Constant</td><td>-1.700<sup>*</sup></td><td>-20.618</td><td>-0.259</td><td>-20.154</td></tr>
-<tr><td style="text-align:left"></td><td>(0.985)</td><td>(17730.370)</td><td>(0.555)</td><td>(10754.010)</td></tr>
-<tr><td style="text-align:left">N</td><td>228</td><td>155</td><td>76</td><td>38</td></tr>
-<tr><td style="text-align:left">Log Likelihood</td><td>-131.972</td><td>-49.187</td><td>-51.124</td><td>-11.078</td></tr>
-<tr><td style="text-align:left">AIC</td><td>311.943</td><td>150.375</td><td>110.248</td><td>42.156</td></tr>
+<table style="text-align:center"><caption><strong>Regresiones logísticas y modelos de resultados después del matching para posiciones políticas en Chile (1990-2010)</strong></caption>
+<tr><td colspan="5" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td colspan="2"><strong>Gabinete</strong></td><td colspan="2"><strong>Senado</strong></td></tr>
+<tr><td style="text-align:left"></td><td><strong>Modelo IV</strong></td><td><strong>Modelo V</strong></td><td><strong>Modelo VI</strong></td><td><strong>Modelo VII</strong></td></tr>
+<tr><td colspan="5" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Trayectoria empresarial</td><td>0.333</td><td>0.026</td><td>-1.843<sup>*</sup></td><td>-1.455</td></tr>
+<tr><td style="text-align:left"></td><td>(0.418)</td><td>(0.513)</td><td>(1.119)</td><td>(0.949)</td></tr>
+<tr><td style="text-align:left">Sexo (mujer)</td><td>0.534</td><td></td><td>-32.476</td><td></td></tr>
+<tr><td style="text-align:left"></td><td>(0.397)</td><td></td><td>(5165.310)</td><td></td></tr>
+<tr><td style="text-align:left">Capital político (dirigente local)</td><td>-0.268</td><td></td><td>-19.789</td><td></td></tr>
+<tr><td style="text-align:left"></td><td>(0.710)</td><td></td><td>(7456.272)</td><td></td></tr>
+<tr><td style="text-align:left">Capital político (dirigente regional)</td><td>0.030</td><td></td><td>-1.209</td><td></td></tr>
+<tr><td style="text-align:left"></td><td>(0.828)</td><td></td><td>(1.394)</td><td></td></tr>
+<tr><td style="text-align:left">Capital político (dirigente nacional)</td><td>1.437<sup>***</sup></td><td></td><td>0.448</td><td></td></tr>
+<tr><td style="text-align:left"></td><td>(0.403)</td><td></td><td>(0.954)</td><td></td></tr>
+<tr><td style="text-align:left">Nivel educacional</td><td>0.997<sup>*</sup></td><td>0.049</td><td>-1.647</td><td>0.865</td></tr>
+<tr><td style="text-align:left"></td><td>(0.586)</td><td>(0.934)</td><td>(1.246)</td><td>(1.972)</td></tr>
+<tr><td style="text-align:left">Escuela secundaria privada</td><td>0.129</td><td></td><td>0.427</td><td>0.555</td></tr>
+<tr><td style="text-align:left"></td><td>(0.321)</td><td></td><td>(0.679)</td><td>(1.335)</td></tr>
+<tr><td style="text-align:left">Capital político familiar</td><td>0.567</td><td></td><td>1.019</td><td></td></tr>
+<tr><td style="text-align:left"></td><td>(0.434)</td><td></td><td>(0.699)</td><td></td></tr>
+<tr><td style="text-align:left">Constant</td><td>-1.700<sup>*</sup></td><td>-0.262</td><td>-20.618</td><td>-2.166</td></tr>
+<tr><td style="text-align:left"></td><td>(0.985)</td><td>(0.593)</td><td>(17730.370)</td><td>(1.675)</td></tr>
+<tr><td style="text-align:left">Matching</td><td>No</td><td>Full</td><td>No</td><td>Full</td></tr>
+<tr><td style="text-align:left">Sub. Clustering</td><td>No</td><td>Sí</td><td>No</td><td>Sí</td></tr>
+<tr><td style="text-align:left">Efectos fijos (partido)</td><td>Sí</td><td>PSA</td><td>Sí</td><td>PSA</td></tr>
+<tr><td style="text-align:left">Submuestra</td><td>Sí</td><td>Sí</td><td>Sí</td><td>Sí</td></tr>
+<tr><td style="text-align:left">VIF</td><td>Bajo</td><td>Bajo</td><td>Bajo</td><td>Bajo</td></tr>
+<tr><td style="text-align:left">Pseudo R2</td><td>0.270</td><td>--</td><td>0.397</td><td>--</td></tr>
+<tr><td style="text-align:left">N</td><td>228</td><td>228</td><td>155</td><td>155</td></tr>
+<tr><td style="text-align:left">Log Likelihood</td><td>-131.972</td><td>-146.422</td><td>-49.187</td><td>-69.808</td></tr>
+<tr><td style="text-align:left">AIC</td><td>311.943</td><td>298.843</td><td>150.375</td><td>147.617</td></tr>
 <tr><td colspan="5" style="border-bottom: 1px solid black"></td></tr><tr><td colspan="5"><sup>***</sup>p < .01; <sup>**</sup>p < .05; <sup>*</sup>p < .1</td></tr>
 </table>
