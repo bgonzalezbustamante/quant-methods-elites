@@ -15,6 +15,9 @@ All notable changes to "Quantitative and Mixed Methods for Studying Elites" will
 ## [0.3.0] - 2022-02-06
 ### Added
 - GLMs code.
+### Changed
+- Elite survey data cleaning code.
+- Data set in CSV UTF-8 format.
 
 ## [0.2.0] - 2022-02-05
 ### Added
