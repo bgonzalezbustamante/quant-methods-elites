@@ -23,9 +23,9 @@
 rm(list = ls())
 
 ## Packages
-library(stargazer)
-library(pscl)
 library(performance)
+library(pscl)
+library(stargazer)
 library(sjPlot)
 library(ggplot2)
 
@@ -92,9 +92,9 @@ model_3 <- glm(deputy ~ exp_business + I(sex) + as.factor(pol_cap) + edu
                + priv_school + family_capital, data = elite_data, family = "binomial")
 
 ## Check Multicollinearity
-performance::check_collinearity(model_1)
-performance::check_collinearity(model_2)
-performance::check_collinearity(model_3)
+check_collinearity(model_1)
+check_collinearity(model_2)
+check_collinearity(model_3)
 
 stargazer(model_1, model_2, model_3,
           type = "html", header = FALSE, style = "ajps", out = "results/tables/table_01.html",
@@ -154,10 +154,10 @@ love.plot(m_out_2, stat = "mean.diffs", poly = 1, abs = TRUE,
 dev.off()
 
 ## Check Multicollinearity
-performance::check_collinearity(model_4)
-performance::check_collinearity(model_5)
-performance::check_collinearity(model_6)
-performance::check_collinearity(model_7)
+check_collinearity(model_4)
+check_collinearity(model_5)
+check_collinearity(model_6)
+check_collinearity(model_7)
 
 stargazer(model_4, model_5, model_6, model_7,
           type = "html", header = FALSE, style = "ajps", out = "results/tables/table_02.html",
