@@ -79,6 +79,19 @@ cox_2 <- coxph(Surv(time_minister, exit == 1) ~ exp_business + I(sex) + non_part
 ## Code PSA (under embargo)
 source("../secured-data/qmm-elites/stage_3_psa_embargo.R", encoding = "UTF-8")
 
+## Standardised and Absolute Mean Differences
+png("results/figures/figure_06.png", width = (1024*2), height = (768*2), units = 'px', res = 300)
+love.plot(c_out_1, stat = "mean.diffs", poly = 1, abs = TRUE,
+          drop.distance = TRUE, thresholds = c(m = .1),
+          var.order = "unadjusted",
+          shapes = c("square filled", "triangle filled"),
+          colors = c("black", "black"),
+          var.names = loveplot_var_3,
+          sample.names = c("Sin Matching", "Full Matching"),
+          line = FALSE, stars = "none", title = NULL) + theme_minimal(base_size = 12) +
+  theme(plot.margin = unit(c(0.5,0.5,0.5,0.5), "cm"), legend.title = element_blank()) + xlab(NULL)
+dev.off()
+
 ## Check Multicollinearity
 performance::check_collinearity(cox_1)
 performance::check_collinearity(cox_2)
@@ -128,4 +141,4 @@ plot_model(cox_3_plot, type = "pred", terms = c("exp_business")) +
         axis.line = element_blank()) +
   scale_x_continuous(breaks = c(0, 1),
                      labels = c("No posee", "Posee"))
-ggsave("results/figures/figure_06.jpg", width = 4, height = 4, units = "in")
+ggsave("results/figures/figure_07.jpg", width = 4, height = 4, units = "in")
