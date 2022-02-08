@@ -82,14 +82,14 @@ length(which(elite_data$senator == 1 | elite_data$deputy == 1 | elite_data$party
 
 ## +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-model_1 <- glm(minister ~ I(exp_business) + I(sex) + as.factor(pol_cap) + edu
-               + priv_school + as.factor(family_capital), data = elite_data, family = "binomial")
+model_1 <- glm(minister ~ exp_business + I(sex) + as.factor(pol_cap) + edu
+               + priv_school + family_capital, data = elite_data, family = "binomial")
 
-model_2 <- glm(senator ~ I(exp_business) + I(sex) + as.factor(pol_cap) + edu
-               + priv_school + as.factor(family_capital), data = elite_data, family = "binomial")
+model_2 <- glm(senator ~ exp_business + I(sex) + as.factor(pol_cap) + edu
+               + priv_school + family_capital, data = elite_data, family = "binomial")
 
-model_3 <- glm(deputy ~ I(exp_business) + I(sex) + as.factor(pol_cap) + edu
-               + priv_school + as.factor(family_capital), data = elite_data, family = "binomial")
+model_3 <- glm(deputy ~ exp_business + I(sex) + as.factor(pol_cap) + edu
+               + priv_school + family_capital, data = elite_data, family = "binomial")
 
 ## Check Multicollinearity
 performance::check_collinearity(model_1)
@@ -113,14 +113,14 @@ stargazer(model_1, model_2, model_3,
                                "Capital político (dirigente regional)", "Capital político (dirigente nacional)",
                                "Nivel educacional", "Escuela secundaria privada", "Capital político familiar"))
 
-model_4 <- glm(minister ~ I(exp_business) + I(sex) + as.factor(pol_cap) + edu
-               + priv_school + as.factor(family_capital) + I(party_1),
+model_4 <- glm(minister ~ exp_business + I(sex) + as.factor(pol_cap) + edu
+               + priv_school + family_capital + I(party_1),
                data = subset(elite_data, elite_data$minister == 1 | elite_data$undersecretary == 1
                              | elite_data$intendant == 1 | elite_data$ceo == 1
                              | elite_data$cabinet_chief == 1), family = "binomial")
 
-model_6 <- glm(senator ~ I(exp_business) + I(sex) + as.factor(pol_cap) + edu
-               + priv_school + as.factor(family_capital) + I(party_1),
+model_6 <- glm(senator ~ exp_business + I(sex) + as.factor(pol_cap) + edu
+               + priv_school + family_capital + I(party_1),
                data = subset(elite_data, elite_data$senator == 1 | elite_data$deputy == 1
                              | elite_data$party_leader == 1), family = "binomial")
 
