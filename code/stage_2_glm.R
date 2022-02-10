@@ -128,7 +128,7 @@ model_6 <- glm(senator ~ exp_business + I(sex) + as.factor(pol_cap) + edu
 source("../secured-data/qmm-elites/stage_2_psa_embargo.R", encoding = "UTF-8")
 
 ## Standardised and Absolute Mean Differences
-png("results/figures/figure_01.png", width = (1024*2), height = (768*2), units = 'px', res = 300)
+png("results/figures/figure_01a.png", width = (1024*2), height = (768*2), units = 'px', res = 300)
 love.plot(m_out_1, stat = "mean.diffs", poly = 1, abs = TRUE,
           drop.distance = TRUE, thresholds = c(m = .1),
           var.order = "unadjusted",
@@ -141,7 +141,7 @@ love.plot(m_out_1, stat = "mean.diffs", poly = 1, abs = TRUE,
 dev.off()
 
 ## Standardised and Absolute Mean Differences
-png("results/figures/figure_02.png", width = (1024*2), height = (768*2), units = 'px', res = 300)
+png("results/figures/figure_01b.png", width = (1024*2), height = (768*2), units = 'px', res = 300)
 love.plot(m_out_2, stat = "mean.diffs", poly = 1, abs = TRUE,
           drop.distance = TRUE, thresholds = c(m = .1),
           var.order = "unadjusted",
@@ -184,7 +184,7 @@ stargazer(model_4, model_5, model_6, model_7,
 
 plot_model(model_1, type = "pred", terms = c("edu")) +
   theme_classic() + coord_cartesian(expand = TRUE, ylim = c(0, 1)) +
-  labs(x = "\nNivel educacional", y = "Probabilidad predicha", caption = "") +
+  labs(x = "\nNivel educacional \nModelo sin ajustes", y = "Probabilidad predicha", caption = "Probando") +
   ggtitle("") +
   theme(axis.title.x = element_text(face = "bold"),
         axis.title.y = element_text(face = "bold"),
@@ -194,11 +194,11 @@ plot_model(model_1, type = "pred", terms = c("edu")) +
         axis.line = element_blank()) +
   scale_x_continuous(breaks = c(0, 0.33, 0.67, 1),
                      labels = c("Secundaria", "Universitaria", "Magíster", "Doct."))
-ggsave("results/figures/figure_03.jpg", width = 4, height = 4, units = "in")
+ggsave("results/figures/figure_03a.jpg", width = 4, height = 4, units = "in")
 
 plot_model(model_4, type = "pred", terms = c("edu")) +
   theme_classic() + coord_cartesian(expand = TRUE, ylim = c(0, 1)) +
-  labs(x = "\nNivel educacional", y = "Probabilidad predicha", caption = "") +
+  labs(x = "\nNivel educacional \nSubmuestra con efectos fijos", y = "Probabilidad predicha", caption = "") +
   ggtitle("") +
   theme(axis.title.x = element_text(face = "bold"),
         axis.title.y = element_text(face = "bold"),
@@ -208,11 +208,11 @@ plot_model(model_4, type = "pred", terms = c("edu")) +
         axis.line = element_blank()) +
   scale_x_continuous(breaks = c(0, 0.33, 0.67, 1),
                      labels = c("Secundaria", "Universitaria", "Magíster", "Doct."))
-ggsave("results/figures/figure_04.jpg", width = 4, height = 4, units = "in")
+ggsave("results/figures/figure_03b.jpg", width = 4, height = 4, units = "in")
 
 plot_model(model_5, type = "pred", terms = c("edu"), se = m5_cluster_robust_se[,2]) +
   theme_classic() + coord_cartesian(expand = TRUE, ylim = c(0, 1)) +
-  labs(x = "\nNivel educacional", y = "Probabilidad predicha", caption = "") +
+  labs(x = "\nNivel educacional \nDespués de Full Matching", y = "Probabilidad predicha", caption = "") +
   ggtitle("") +
   theme(axis.title.x = element_text(face = "bold"),
         axis.title.y = element_text(face = "bold"),
@@ -222,4 +222,4 @@ plot_model(model_5, type = "pred", terms = c("edu"), se = m5_cluster_robust_se[,
         axis.line = element_blank()) +
   scale_x_continuous(breaks = c(0, 0.33, 0.67, 1),
                      labels = c("Secundaria", "Universitaria", "Magíster", "Doct."))
-ggsave("results/figures/figure_05.jpg", width = 4, height = 4, units = "in")
+ggsave("results/figures/figure_03c.jpg", width = 4, height = 4, units = "in")
