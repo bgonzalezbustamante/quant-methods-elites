@@ -11,6 +11,12 @@ All notable changes to "Quantitative and Mixed Methods for Studying Elites" will
 
 ## [Released]
 
+## [0.5.0] - 2022-02-10
+### Added
+- BibTeX file.
+### Changed
+- Minor corrections.
+
 ## [0.4.0] - 2022-02-07
 ### Added
 - Cox models code.
