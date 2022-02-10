@@ -184,7 +184,7 @@ stargazer(model_4, model_5, model_6, model_7,
 
 plot_model(model_1, type = "pred", terms = c("edu")) +
   theme_classic() + coord_cartesian(expand = TRUE, ylim = c(0, 1)) +
-  labs(x = "\nNivel educacional \nModelo sin ajustes", y = "Probabilidad predicha", caption = "Probando") +
+  labs(x = "\nNivel educacional \nModelo sin ajustes", y = "Probabilidad predicha", caption = "") +
   ggtitle("") +
   theme(axis.title.x = element_text(face = "bold"),
         axis.title.y = element_text(face = "bold"),
