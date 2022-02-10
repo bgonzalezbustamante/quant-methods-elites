@@ -97,7 +97,7 @@ check_collinearity(model_2)
 check_collinearity(model_3)
 
 stargazer(model_1, model_2, model_3,
-          type = "html", header = FALSE, style = "ajps", out = "results/tables/table_01.html",
+          type = "latex", header = FALSE, style = "ajps", out = "results/tables/table_01.tex",
           title = "Regresiones logísticas con datos observacionales para posiciones políticas en Chile (1990-2010)",
           dep.var.labels = c("Gabinete", "Senado", "Cámara"), notes.align = "c", model.numbers = FALSE, omit = "party_1",
           column.labels = c("Modelo I","Modelo II","Modelo III"),
@@ -160,7 +160,7 @@ check_collinearity(model_6)
 check_collinearity(model_7)
 
 stargazer(model_4, model_5, model_6, model_7,
-          type = "html", header = FALSE, style = "ajps", out = "results/tables/table_02.html",
+          type = "latex", header = FALSE, style = "ajps", out = "results/tables/table_02.tex",
           title = "Regresiones logísticas y modelos de resultados después del matching para posiciones políticas en Chile (1990-2010)",
           se = list(NULL, m5_cluster_robust_se[,2], NULL, m7_cluster_robust_se[,2]),
           dep.var.labels = c("Gabinete", "Senado"), notes.align = "c", model.numbers = FALSE, omit = "party_1",
