@@ -89,7 +89,7 @@ love.plot(c_out_1, stat = "mean.diffs", poly = 1, abs = TRUE,
           var.names = loveplot_var_3,
           sample.names = c("Sin Matching", "Full Matching"),
           line = FALSE, stars = "none", title = NULL) + theme_minimal(base_size = 12) +
-  theme(plot.margin = unit(c(0.5,0.5,0.5,0.5), "cm"), legend.title = element_blank()) + xlab(NULL)
+  theme(plot.margin = unit(c(0.5,0.5,0.5,0.5), "cm"), legend.title = element_blank()) + xlab("Gabinete")
 dev.off()
 
 ## Check Multicollinearity
