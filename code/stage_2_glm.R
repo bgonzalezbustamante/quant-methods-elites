@@ -137,7 +137,7 @@ love.plot(m_out_1, stat = "mean.diffs", poly = 1, abs = TRUE,
           var.names = loveplot_var_1,
           sample.names = c("Sin Matching", "Full Matching"),
           line = FALSE, stars = "none", title = NULL) + theme_minimal(base_size = 12) +
-  theme(plot.margin = unit(c(0.5,0.5,0.5,0.5), "cm"), legend.title = element_blank()) + xlab(NULL)
+  theme(plot.margin = unit(c(0.5,0.5,0.5,0.5), "cm"), legend.title = element_blank()) + xlab("Gabinete")
 dev.off()
 
 ## Standardised and Absolute Mean Differences
@@ -150,7 +150,7 @@ love.plot(m_out_2, stat = "mean.diffs", poly = 1, abs = TRUE,
           var.names = loveplot_var_2,
           sample.names = c("Sin Matching", "Full Matching"),
           line = FALSE, stars = "none", title = NULL) + theme_minimal(base_size = 12) +
-  theme(plot.margin = unit(c(0.5,0.5,0.5,0.5), "cm"), legend.title = element_blank()) + xlab(NULL)
+  theme(plot.margin = unit(c(0.5,0.5,0.5,0.5), "cm"), legend.title = element_blank()) + xlab("Senado")
 dev.off()
 
 ## Check Multicollinearity
