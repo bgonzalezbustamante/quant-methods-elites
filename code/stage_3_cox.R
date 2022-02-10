@@ -131,7 +131,7 @@ stargazer(cox_1, cox_2, cox_3,
 
 plot_model(cox_3_plot, type = "pred", terms = c("exp_business")) +
   theme_classic() + coord_cartesian(expand = TRUE, ylim = c(0, 1)) +
-  labs(x = "\nTrayectoria empresarial", y = "Coeficiente de riesgo", caption = "") +
+  labs(x = "\nTrayectoria empresarial \nDespués de Full Matching", y = "Coeficiente de riesgo", caption = "") +
   ggtitle("") +
   theme(axis.title.x = element_text(face = "bold"),
         axis.title.y = element_text(face = "bold"),
