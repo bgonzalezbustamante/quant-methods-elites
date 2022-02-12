@@ -1,7 +1,7 @@
 # quant-methods-elites
 **Quantitative Methods for Studying Elites**
 
-[![Version](https://img.shields.io/badge/version-v0.5.0-blue.svg)](CHANGELOG.md) [![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](STATUS.md) [![GitHub issues](https://img.shields.io/github/issues/bgonzalezbustamante/quant-mixed-methods-elites.svg)](https://github.com/bgonzalezbustamante/quant-mixed-methods-elites/issues/) [![GitHub issues-closed](https://img.shields.io/github/issues-closed/bgonzalezbustamante/quant-mixed-methods-elites.svg)](https://github.com/bgonzalezbustamante/quant-mixed-methods-elites/issues?q=is%3Aissue+is%3Aclosed) [![DOI](https://img.shields.io/badge/DOI-TBC-blue)](CHANGELOG.md) [![License](https://img.shields.io/badge/license-CC--BY--4.0-black)](LICENSE.md) [![R](https://img.shields.io/badge/made%20with-R%20v4.1.0-1f425f.svg)](https://cran.r-project.org/) [![Latex](https://img.shields.io/badge/made%20with-LaTeX-1f425f.svg)](https://www.latex-project.org/)
+[![Version](https://img.shields.io/badge/version-v0.5.1-blue.svg)](CHANGELOG.md) [![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](STATUS.md) [![GitHub issues](https://img.shields.io/github/issues/bgonzalezbustamante/quant-methods-elites.svg)](https://github.com/bgonzalezbustamante/quant-methods-elites/issues/) [![GitHub issues-closed](https://img.shields.io/github/issues-closed/bgonzalezbustamante/quant-methods-elites.svg)](https://github.com/bgonzalezbustamante/quant-mixed-methods-elites/issues?q=is%3Aissue+is%3Aclosed) [![DOI](https://img.shields.io/badge/DOI-TBC-blue)](CHANGELOG.md) [![License](https://img.shields.io/badge/license-CC--BY--4.0-black)](LICENSE.md) [![R](https://img.shields.io/badge/made%20with-R%20v4.1.0-1f425f.svg)](https://cran.r-project.org/) [![Latex](https://img.shields.io/badge/made%20with-LaTeX-1f425f.svg)](https://www.latex-project.org/)
 
 ## Overview
 
@@ -9,7 +9,7 @@ WIP
 
 ## Metadata and Preservation
 
-This TBC is stored with version control on a GitHub repository. Furthermore, a Digital Object Identifier (DOI: TBC) is provided by TBC.
+This code and data are stored with version control on a GitHub repository. Furthermore, a Digital Object Identifier (DOI: TBC) is provided by Zenodo.
 
 ## Storage and Backup
 
@@ -37,7 +37,7 @@ This TBC is released under a [Creative Commons Attribution 4.0 International lic
 
 ## Contribute
 
-Contributions are entirely welcome. You just need to [open an issue](https://github.com/bgonzalezbustamante/quant-mixed-methods-elites/issues/new) with your comment or idea.
+Contributions are entirely welcome. You just need to [open an issue](https://github.com/bgonzalezbustamante/quant-methods-elites/issues/new) with your comment or idea.
 
 For more substantial contributions, please fork this repository and make changes. Pull requests are also welcome.
 
@@ -60,4 +60,4 @@ WIP
 
 ### Latest Revision
 
-[TBC](CHANGELOG.md).
+[February 12, 2022](CHANGELOG.md).
