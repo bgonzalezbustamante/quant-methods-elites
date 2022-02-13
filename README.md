@@ -13,7 +13,46 @@ In addition, it contains an anonymised, sliced data set from the Chilean Elite S
 
 This code and data are stored with version control on a GitHub repository. Furthermore, a Digital Object Identifier (DOI: TBC) is provided by Zenodo.
 
-WIP.
+``` r
+demo-regularisation
+|-- .gitignore
+|-- CHANGELOG.md
+|-- CITATION.cff (pending)
+|-- CODE_OF_CONDUCT.md
+|-- LICENSE.md
+|-- quant-methods-elites.Rproj
+|-- README.md
+|-- STATUS.md
+|-- code
+    |-- stage_1_data_cleaning.R
+    |-- stage_2_glm.R
+    |-- stage_3_cox.R
+|-- data
+    |-- tidy
+        |-- elite_survey_2010.csv
+|-- refs
+    |-- BIB-QM-Elites.bib
+|-- results
+    |-- figures
+        |-- figure_01a.png
+        |-- figure_01b.png
+        |-- figure_02.png
+        |-- figure_03a.jpg
+        |-- figure_03b.jpg
+        |-- figure_03c.jpg
+        |-- figure_04.jpg
+    |-- tables
+        |-- table_01.html
+        |-- table_01.tex
+        |-- table_02.html
+        |-- table_02.tex
+        |-- table_03.html
+        |-- table_03.tex
+```
+
+7 directories and 26 files.
+
+In addition, this README file in Markdown (MD) format provides specific information to ensure the replicability of the code.
 
 ## Storage and Backup
 
@@ -80,7 +119,7 @@ Please read our [code of conduct](CODE_OF_CONDUCT.md) first. Minor contributions
 
 ## Citation
 
-González-Bustamante, B. (2022). Quantitative Methods for Studying Elites (Version 1.2.1 -- TBC) [Computer software].
+González-Bustamante, B. (2022). Quantitative Methods for Studying Elites (Version 0.7.4 -- TBC) [Computer software].
 
 ## Author
 
