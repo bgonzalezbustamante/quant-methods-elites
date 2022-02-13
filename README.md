@@ -5,7 +5,9 @@
 
 ## Overview
 
-WIP
+This repository contains demonstrations for R of generalised linear models and proportional hazards Cox regressions to measure the impact of individual business trajectories on the access and permanence in political positions in the Chilean executive and legislative branches. These demonstrations are the primary analysis of the forthcoming methodological book chapter entitled “*Métodos cuantitativos para estudiar a las élites: Aplicaciones prácticas, sesgos y potencialidades*”.
+
+In addition, it contains an anonymised, sliced data set from the Chilean Elite Survey (1990-2010) (*N* = 386) in Comma-Separated Values (CSV) format with Unicode encoding (UTF-8). The second data set used in the demonstrations is González-Bustamante and Olivares (2022).[^1]
 
 ## Metadata and Preservation
 
@@ -15,13 +17,17 @@ This code and data are stored with version control on a GitHub repository. Furth
 
 The GitHub repository has controlled access with Two-Factor Authentication (2FA) with two physical USB security devices (Bastián González-Bustamante, [ORCID iD 0000-0003-1510-6820](https://orcid.org/0000-0003-1510-6820)). Both USB keys issue one-time passwords to generate a cryptographic authentication FIDO2 and U2F.
 
-WIP.
+Moreover, the repository is backed up on Hierarchical File Server (HFS) for recovery in case of incidents. This backup is located on the University of Oxford hub connected to Code42 Cloud Backup encrypted with 256-bit AES. The backup is performed with every change on GitHub and receives weekly light maintenance and a deep one every month. This backup will be secured until May 2024. An extension of this period will be evaluated on budget availability.
 
 ## Getting Started
 
 ### Software
 
-WIP
+We use R version 4.1.0 (2021-05-18) -- "Camp Pontanezen".
+
+Required R libraries are: WIP.
+
+WIP.
 
 ### Replication Instructions
 
@@ -61,3 +67,5 @@ WIP
 ### Latest Revision
 
 [February 12, 2022](CHANGELOG.md).
+
+[^1]: González-Bustamante, B., & Olivares, A. (2022). Data Set on Chilean Ministers (1990-2014) (Version 3.1.0 -- Lively Wind) [Data set]. DOI: [10.5281/zenodo.5744536](https://doi.org/10.5281/zenodo.5744536).
