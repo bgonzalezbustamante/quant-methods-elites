@@ -51,7 +51,7 @@ Please read our [code of conduct](CODE_OF_CONDUCT.md) first. Minor contributions
 
 ## Citation
 
-González-Bustamante, B. (2022). Quantitative Methods for Studying Elites (Version 1.2.1 -- Holy Truth) [Computer software].
+González-Bustamante, B. (2022). Quantitative Methods for Studying Elites (Version 1.2.1 -- TBC) [Computer software].
 
 ## Author
 
