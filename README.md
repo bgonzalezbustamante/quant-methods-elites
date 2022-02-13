@@ -31,6 +31,33 @@ Required R libraries are: WIP.
 
 WIP.
 
+### Import Data
+
+#### R Code
+
+``` r
+## GitHub Repository
+github_1 <- "https://raw.githubusercontent.com/"
+github_2 <- "bgonzalezbustamante/quant-methods-elites/main/data/tidy/"
+
+## Chilean Ministers Data
+chilean_ministers <- read.csv(paste(github_1, github_2, "elite_survey_2010.csv", sep = ""),
+                              header = T, sep = ",", encoding = "UTF-8")
+```
+#### Python Code
+
+``` python
+import pandas as pd
+
+## GitHub Repository
+github_1 = "https://raw.githubusercontent.com/"
+github_2 = "bgonzalezbustamante/quant-methods-elites/main/data/tidy/"
+
+## Chilean Ministers Data
+url = github_1 + github_2 + "elite_survey_2010.csv"
+df = pd.read_csv(url, index_col=0)
+```
+
 ### Replication Instructions
 
 WIP
