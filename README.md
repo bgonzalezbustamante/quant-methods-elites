@@ -1,7 +1,7 @@
 # quant-methods-elites
 **Quantitative Methods for Studying Elites**
 
-[![Version](https://img.shields.io/badge/version-v0.8.3-blue.svg)](CHANGELOG.md) [![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](STATUS.md) [![GitHub issues](https://img.shields.io/github/issues/bgonzalezbustamante/quant-methods-elites.svg)](https://github.com/bgonzalezbustamante/quant-methods-elites/issues/) [![GitHub issues-closed](https://img.shields.io/github/issues-closed/bgonzalezbustamante/quant-methods-elites.svg)](https://github.com/bgonzalezbustamante/quant-mixed-methods-elites/issues?q=is%3Aissue+is%3Aclosed) [![DOI](https://img.shields.io/badge/DOI-TBC-blue)](CHANGELOG.md) [![License](https://img.shields.io/badge/license-CC--BY--4.0-black)](LICENSE.md) [![R](https://img.shields.io/badge/made%20with-R%20v4.1.0-1f425f.svg)](https://cran.r-project.org/) [![Latex](https://img.shields.io/badge/made%20with-LaTeX-1f425f.svg)](https://www.latex-project.org/)
+[![Version](https://img.shields.io/badge/version-v0.8.3-blue.svg)](CHANGELOG.md) [![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](STATUS.md) [![GitHub issues](https://img.shields.io/github/issues/bgonzalezbustamante/quant-methods-elites.svg)](https://github.com/bgonzalezbustamante/quant-methods-elites/issues/) [![GitHub issues-closed](https://img.shields.io/github/issues-closed/bgonzalezbustamante/quant-methods-elites.svg)](https://github.com/bgonzalezbustamante/quant-methods-elites/issues?q=is%3Aissue+is%3Aclosed) [![DOI](https://img.shields.io/badge/DOI-TBC-blue)](CHANGELOG.md) [![License](https://img.shields.io/badge/license-CC--BY--4.0-black)](LICENSE.md) [![R](https://img.shields.io/badge/made%20with-R%20v4.1.0-1f425f.svg)](https://cran.r-project.org/) [![Latex](https://img.shields.io/badge/made%20with-LaTeX-1f425f.svg)](https://www.latex-project.org/)
 
 ## Overview
 
@@ -11,7 +11,7 @@ In addition, it contains an anonymised, sliced data set from the Chilean Elite S
 
 ## Metadata and Preservation
 
-This code and data are stored with version control on a GitHub repository. Furthermore, a Digital Object Identifier (DOI: TBC) is provided by Zenodo.
+This code and data are stored with version control on a GitHub repository. Furthermore, a Digital Object Identifier is provided by Zenodo.
 
 ``` r
 quant-methods-elites
@@ -67,6 +67,7 @@ Moreover, the repository is backed up on Hierarchical File Server (HFS) for reco
 We use R version 4.1.0 (2021-05-18) -- "Camp Pontanezen".
 
 Required R libraries are: WIP.
+
 We recommend that users run replication code and scripts from the root directory using the R project "quant-methods-elites.Rproj" or, if they wish, import the anonymised, sliced data set from the Chilean Elite Survey (1990-2010) directly using the code below. The instructions for importing data on cabinets are available [**here**](https://github.com/bgonzalezbustamante/chilean-ministers/).
 
 ### Import Data
@@ -118,7 +119,7 @@ Please read our [code of conduct](CODE_OF_CONDUCT.md) first. Minor contributions
 
 ## Citation
 
-González-Bustamante, B. (2022). Quantitative Methods for Studying Elites (Version 0.7.4 -- TBC) [Computer software].
+González-Bustamante, B. (2022). Quantitative Methods for Studying Elites (Version 0.8.3 -- TBC) [Computer software].
 
 ## Author
 
@@ -140,4 +141,4 @@ ANID/FONDECYT 1100877 Research Team: Investigation.[^2]
 [February 12, 2022](CHANGELOG.md).
 
 [^1]: González-Bustamante, B., & Olivares, A. (2022). Data Set on Chilean Ministers (1990-2014) (Version 3.1.0 -- Lively Wind) [Data set]. DOI: [10.5281/zenodo.5744536](https://doi.org/10.5281/zenodo.5744536).
-[^2]: For contributions related to cabinet data, see this [**repository**](https://github.com/bgonzalezbustamante/chilean-ministers/).
+[^2]: For contributions related to cabinet data, see this [GitHub repository](https://github.com/bgonzalezbustamante/chilean-ministers/).
