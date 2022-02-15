@@ -130,7 +130,7 @@ https://bgonzalezbustamante.com
 
 ## CRediT - Contributor Roles Taxonomy
 
-Bastián González-Bustamante ([ORCID iD 0000-0003-1510-6820](https://orcid.org/0000-0003-1510-6820)): Conceptualisation, data curation, formal analysis, investigation, methodology, resources, software, validation, visualisation, Wwiting – original draft, and writing – review and editing
+Bastián González-Bustamante ([ORCID iD 0000-0003-1510-6820](https://orcid.org/0000-0003-1510-6820)): Conceptualisation, data curation, formal analysis, investigation, methodology, resources, software, validation, visualisation, writing – original draft, and writing – review and editing
 
 Alfredo Joignant ([ORCID iD 0000-0002-5811-0988](https://orcid.org/0000-0002-5811-0988)): Data curation, funding acquisition, project administration, resources, supervision, and validation.
 
