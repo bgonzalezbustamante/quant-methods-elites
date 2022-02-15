@@ -14,7 +14,7 @@ In addition, it contains an anonymised, sliced data set from the Chilean Elite S
 This code and data are stored with version control on a GitHub repository. Furthermore, a Digital Object Identifier (DOI: TBC) is provided by Zenodo.
 
 ``` r
-demo-regularisation
+quant-methods-elites
 |-- .gitignore
 |-- CHANGELOG.md
 |-- CITATION.cff (pending)
@@ -67,8 +67,7 @@ Moreover, the repository is backed up on Hierarchical File Server (HFS) for reco
 We use R version 4.1.0 (2021-05-18) -- "Camp Pontanezen".
 
 Required R libraries are: WIP.
-
-WIP.
+We recommend that users run replication code and scripts from the root directory using the R project "quant-methods-elites.Rproj" or, if they wish, import the anonymised, sliced data set from the Chilean Elite Survey (1990-2010) directly using the code below. The instructions for importing data on cabinets are available [**here**](https://github.com/bgonzalezbustamante/chilean-ministers/).
 
 ### Import Data
 
@@ -107,7 +106,7 @@ WIP
 
 ## License
 
-This TBC is released under a [Creative Commons Attribution 4.0 International license (CC BY 4.0)](LICENSE.md). This open-access license allows the data to be shared, reused, adapted as long as appropriate acknowledgement is given.
+This R code and anonymised, sliced data set from the Chilean Elite Survey (1990-2010) are released under a [Creative Commons Attribution 4.0 International license (CC BY 4.0)](LICENSE.md). This open-access license allows the data to be shared, reused, adapted as long as appropriate acknowledgement is given.
 
 ## Contribute
 
@@ -130,10 +129,15 @@ https://bgonzalezbustamante.com
 
 ## CRediT - Contributor Roles Taxonomy
 
-WIP
+Bastián González-Bustamante ([ORCID iD 0000-0003-1510-6820](https://orcid.org/0000-0003-1510-6820)): Conceptualisation, data curation, formal analysis, investigation, methodology, resources, software, validation, visualisation, Wwiting – original draft, and writing – review and editing
+
+Alfredo Joignant ([ORCID iD 0000-0002-5811-0988](https://orcid.org/0000-0002-5811-0988)): Data curation, funding acquisition, project administration, resources, supervision, and validation.
+
+ANID/FONDECYT 1100877 Research Team: Investigation.[^2]
 
 ### Latest Revision
 
 [February 12, 2022](CHANGELOG.md).
 
 [^1]: González-Bustamante, B., & Olivares, A. (2022). Data Set on Chilean Ministers (1990-2014) (Version 3.1.0 -- Lively Wind) [Data set]. DOI: [10.5281/zenodo.5744536](https://doi.org/10.5281/zenodo.5744536).
+[^2]: For contributions related to cabinet data, see this [**repository**](https://github.com/bgonzalezbustamante/chilean-ministers/).
