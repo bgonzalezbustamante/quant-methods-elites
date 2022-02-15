@@ -99,9 +99,19 @@ df = pd.read_csv(url, index_col=0)
 
 ### Replication Instructions
 
-WIP
+Folder "code" contains the R scripts.
+
+Subfolders "results/figures" and "results/tables" include all plots and tables provided as PNG, JPG, HTML, and TeX files, respectively.
+
+- **Stage 1.** Please do not run R script "**stage_1_data_cleaning.R**" from the "code" folder since it requires complete, non-anonymised data sets under embargo.
+
+- **Stage 2.** Run script "**stage_2_glm.R**" from the "code" folder. This script contains GLMs demonstrations for R. Model after matching is not available for the moment since the propensity score chunk is still under embargo.
+
+- **Stage 3.** Run script "**stage_3_cox.R**" from the "code" folder. This script contains proportional hazards models for R. Model after matching is not available for the moment since the propensity score chunk is still under embargo.
 
 ### Codebook
+
+The file "**elite_survey_2010.csv**" in "data/tidy" subfolder is the anonymised, sliced data set on Chilean elite between 1990 and 2010. This set contains 386 observations.
 
 WIP
 
