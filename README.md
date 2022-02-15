@@ -111,9 +111,71 @@ Subfolders "results/figures" and "results/tables" include all plots and tables p
 
 ### Codebook
 
-The file "**elite_survey_2010.csv**" in "data/tidy" subfolder is the anonymised, sliced data set on Chilean elite between 1990 and 2010. This set contains 386 observations.
+The file "**elite_survey_2010.csv**" in "data/tidy" subfolder is the anonymised, sliced data set on Chilean elite between 1990 and 2010. This set contains 386 observations.[^2]
 
-WIP
+- **id**. Unique ID.
+
+- **sex**. Case sex.
+
+- **dob**. Date of birth.
+
+- **political_capital**.
+
+- **education**.
+
+- **school**.
+
+- **family_capital**.
+
+- **capital_father**.
+
+- **capital_mother.
+
+- **party_1**.
+
+- **party_2**.
+
+- **party_3**.
+
+- **party_4**.
+
+- **t1**.
+
+- **t2**.
+
+- **t3**.
+
+- **t4**.
+
+- **t5**.
+
+- **t6**.
+
+- **t7**.
+
+- **t8**.
+
+- **t9**.
+
+- **exp_business**.
+
+- **president**.
+
+- **minister**.
+
+- **senator**.
+
+- **deputy**.
+
+- **undersecretary**.
+
+- **indendant**.
+
+- **ceo**.
+
+- **cabinet_chief**.
+
+- **party_leader**.
 
 ## License
 
@@ -144,11 +206,12 @@ Bastián González-Bustamante ([ORCID iD 0000-0003-1510-6820](https://orcid.org/
 
 Alfredo Joignant ([ORCID iD 0000-0002-5811-0988](https://orcid.org/0000-0002-5811-0988)): Data curation, funding acquisition, project administration, resources, supervision, and validation.
 
-ANID/FONDECYT 1100877 Research Team: Investigation.[^2]
+ANID/FONDECYT 1100877 Research Team: Investigation.[^3]
 
 ### Latest Revision
 
 [February 12, 2022](CHANGELOG.md).
 
 [^1]: González-Bustamante, B., & Olivares, A. (2022). Data Set on Chilean Ministers (1990-2014) (Version 3.1.0 -- Lively Wind) [Data set]. DOI: [10.5281/zenodo.5744536](https://doi.org/10.5281/zenodo.5744536).
-[^2]: For contributions related to cabinet data, see this [GitHub repository](https://github.com/bgonzalezbustamante/chilean-ministers/).
+[^2]: Although the codebook is still in progress, the names of some variables are self-explanatory.
+[^3]: For contributions related to cabinet data, see this [GitHub repository](https://github.com/bgonzalezbustamante/chilean-ministers/).
