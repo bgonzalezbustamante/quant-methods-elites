@@ -210,7 +210,7 @@ ANID/FONDECYT 1100877 Research Team: Investigation.[^4]
 
 ### Latest Revision
 
-[February 12, 2022](CHANGELOG.md).
+[February 15, 2022](CHANGELOG.md).
 
 [^1]: Joignant, A., & González-Bustamante, B. (2014). El núcleo de la élite política chilena 1990-2010. Proyecto Fondecyt 1100877. Working Paper, Universidad Diego Portales.
 [^2]: González-Bustamante, B., & Olivares, A. (2022). Data Set on Chilean Ministers (1990-2014) (Version 3.1.0 -- Lively Wind) [Data set]. DOI: [10.5281/zenodo.5744536](https://doi.org/10.5281/zenodo.5744536).
