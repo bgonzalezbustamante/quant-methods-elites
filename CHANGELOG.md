@@ -1,5 +1,5 @@
 # Changelog
-All notable changes to "Quantitative Methods for Studying Elites" will be documented in this file.
+All notable changes to "Quantitative Methods for Studying Elites: Demonstration for R" will be documented in this file.
 
 ## [Unreleased]
 
