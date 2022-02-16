@@ -3,7 +3,7 @@ All notable changes to "Quantitative Methods for Studying Elites" will be docume
 
 ## [Unreleased]
 
-## [1.1.0] - TBC
+## [1.0.0] - TBC
 ### Added
 - Code under embargo.
 ### Changed
@@ -11,12 +11,13 @@ All notable changes to "Quantitative Methods for Studying Elites" will be docume
 
 ## [Released]
 
-## [1.0.0] - TBC
+## [0.9.3] - 2022-02-15
 ### Added
-- Zenodo DOI (WIP)
-- Citation CFF file (WIP).
+- Zenodo DOI.
+- Citation CFF file.
 ### Changed
 - Revision of upgrade versioning.
+- BibTeX file.
 - Minor corrections.
 
 ## [0.8.3] - 2022-02-12
@@ -58,34 +59,34 @@ All notable changes to "Quantitative Methods for Studying Elites" will be docume
 - Badges in SVG on GitHub repository.
 - Code of conduct in MD format.
 ### Removed
-- Revised data set in SAV format.
+- Complete, non-anonymised, revised data set in SAV format.
 
 ## [0.3.3] - 2021-07-20
 ### Added
 - Extended abstract on private OSF component.
 ### Deprecated
-- Revised data set in SAV format.
+- Complete, non-anonymised, revised data set in SAV format.
 
 ## [0.2.3] - 2014-09-24
 ### Added
-- Revised data set in SAV format.
+- Complete, non-anonymised, revised data set in SAV format.
 ### Removed
-- Full data set in SAV format.
+- Complete, non-anonymised data set in SAV format.
 
 ## [0.1.3] - 2014-09-23
 ### Changed
-- Full data set in SAV format.
+- Complete, non-anonymised data set in SAV format.
 ### Deprecated
-- Full data set in SAV format.
+- Complete, non-anonymised data set in SAV format.
 
 ## [0.1.2] - 2014-09-20
 ### Changed
-- Full data set in SAV format.
+- Complete, non-anonymised data set in SAV format.
 
 ## [0.1.1] - 2014-09-19
 ### Changed
-- Full data set in SAV format.
+- Complete, non-anonymised data set in SAV format.
 
 ## [0.1.0] - 2014-09-13
 ### Added
-- Full data set in SAV format.
+- Complete, non-anonymised data set in SAV format.
