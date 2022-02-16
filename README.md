@@ -191,7 +191,7 @@ Please read our [code of conduct](CODE_OF_CONDUCT.md) first. Minor contributions
 
 ## Citation
 
-González-Bustamante, B. (2022). Quantitative Methods for Studying Elites: Demonstration for R (Version 0.9.3 -- Crimson Flower) [Computer software]. URL: https://github.com/bgonzalezbustamante/quant-methods-elites
+González-Bustamante, B. (2022). Quantitative Methods for Studying Elites: Demonstration for R (Version 0.9.3 -- Crimson Flower) [Computer software]. DOI: [10.5281/zenodo.6098061](https://doi.org/10.5281/zenodo.6098061)
 
 ## Author
 
