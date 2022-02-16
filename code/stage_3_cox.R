@@ -31,7 +31,7 @@ library(ggplot2)
 
 ## GitHub Repository
 github_1 <- "https://raw.githubusercontent.com/"
-github_2 <- "bgonzalezbustamante/chilean-ministers/main/data/"
+github_2 <- "bgonzalezbustamante/chilean-ministers/main/data/tidy/"
 
 ## Chilean Ministers Data
 chilean_ministers <- read.csv(paste(github_1, github_2, "Chilean_cabinets_1990_2014.csv", sep = ""),
