@@ -68,7 +68,7 @@ We use R version 4.1.0 (2021-05-18) -- "Camp Pontanezen".
 
 Required R libraries are: "cobalt", "foreign", "ggplot2", "lmtest", "MatchIt", "performance", "pscl", "sandwich", "sjPlot", "stargazer", "survival", and "tidyverse".
 
-We recommend that users run replication code and scripts from the root directory using the R project "quant-methods-elites.Rproj" or, if they wish, import the anonymised, sliced data set from the Chilean Elite Survey (1990-2010) directly using the code below. The instructions for importing data on cabinets are available [**here**](https://github.com/bgonzalezbustamante/chilean-ministers/).
+We recommend that users run replication code and scripts from the root directory using the R project "**quant-methods-elites.Rproj**" or, if they wish, import the anonymised, sliced data set from the Chilean Elite Survey (1990-2010) directly using the code below. The instructions for importing data on cabinets are available [**here**](https://github.com/bgonzalezbustamante/chilean-ministers/).
 
 ### Import Data
 
