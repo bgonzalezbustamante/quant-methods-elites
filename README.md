@@ -17,7 +17,7 @@ This code and data are stored with version control on a GitHub repository. Furth
 quant-methods-elites
 |-- .gitignore
 |-- CHANGELOG.md
-|-- CITATION.cff (pending)
+|-- CITATION.cff
 |-- CODE_OF_CONDUCT.md
 |-- LICENSE.md
 |-- quant-methods-elites.Rproj
