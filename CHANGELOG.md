@@ -11,6 +11,11 @@ All notable changes to "Quantitative Methods for Studying Elites: Demonstration 
 
 ## [Released]
 
+## [0.9.4] - 2022-02-16
+### Changed
+- Cox models code.
+- Minor corrections.
+
 ## [0.9.3] - 2022-02-15
 ### Added
 - Zenodo DOI.
