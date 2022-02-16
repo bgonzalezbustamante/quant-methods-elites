@@ -1,5 +1,5 @@
 # quant-methods-elites
-**Quantitative Methods for Studying Elites**
+**Quantitative Methods for Studying Elites: Demonstration for R**
 
 [![Version](https://img.shields.io/badge/version-v0.9.3-blue.svg)](CHANGELOG.md) [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](STATUS.md) [![GitHub issues](https://img.shields.io/github/issues/bgonzalezbustamante/quant-methods-elites.svg)](https://github.com/bgonzalezbustamante/quant-methods-elites/issues/) [![GitHub issues-closed](https://img.shields.io/github/issues-closed/bgonzalezbustamante/quant-methods-elites.svg)](https://github.com/bgonzalezbustamante/quant-methods-elites/issues?q=is%3Aissue+is%3Aclosed) [![DOI](https://img.shields.io/badge/DOI-TBC-blue)](CHANGELOG.md) [![License](https://img.shields.io/badge/license-CC--BY--4.0-black)](LICENSE.md) [![R](https://img.shields.io/badge/made%20with-R%20v4.1.0-1f425f.svg)](https://cran.r-project.org/) [![Latex](https://img.shields.io/badge/made%20with-LaTeX-1f425f.svg)](https://www.latex-project.org/)
 
