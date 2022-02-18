@@ -19,6 +19,7 @@ All notable changes to "Quantitative Methods for Studying Elites: Demonstration 
 - GLMs code.
 - Cox models code.
 - BibTeX file.
+- Minor corrections.
 
 ## [0.9.4] - 2022-02-16
 ### Changed
