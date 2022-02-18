@@ -124,5 +124,5 @@ names(anonymised_data)[32] = "party_leader"
 
 ## Save File
 write.csv(anonymised_data, "data/tidy/elite_survey_2010.csv", fileEncoding = "UTF-8", row.names =  FALSE)
-write.csv(anonymised_data, "../women-trajectories/data/tidy/elite_survey_2010.csv",
-          fileEncoding = "UTF-8", row.names =  FALSE)
+## write.csv(anonymised_data, "../women-trajectories/data/tidy/elite_survey_2010.csv",
+          ## fileEncoding = "UTF-8", row.names =  FALSE)
