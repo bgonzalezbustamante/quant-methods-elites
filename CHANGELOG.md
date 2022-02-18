@@ -14,7 +14,7 @@ All notable changes to "Quantitative Methods for Studying Elites: Demonstration 
 ## [0.10.4] - 2022-02-18
 ### Added
 - Sliced data set of Chamber of Deputies from González-Bustamante and Cisternas (2016) in CSV UTF-8 format.
-- Revision of Chamber cases code.
+- Descriptives of Chamber cases code.
 ### Changed
 - GLMs code.
 - Cox models code.
