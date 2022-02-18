@@ -125,7 +125,7 @@ model_6 <- glm(senator ~ exp_business + I(sex) + as.factor(pol_cap) + edu
                              | elite_data$party_leader == 1), family = "binomial")
 
 ## Code PSA (under embargo)
-source("../secured-data/qmm-elites/stage_2_psa_embargo.R", encoding = "UTF-8")
+source("../secured-data/qm-elites/stage_2_psa_embargo.R", encoding = "UTF-8")
 
 ## Standardised and Absolute Mean Differences
 png("results/figures/figure_01a.png", width = (1024*2), height = (768*2), units = 'px', res = 300)
