@@ -77,7 +77,7 @@ cox_2 <- coxph(Surv(time_minister, exit == 1) ~ exp_business + I(sex) + non_part
                + prestige + political_kinship + I(president), ties = "efron", data = chilean_ministers)
 
 ## Code PSA (under embargo)
-source("../secured-data/qmm-elites/stage_3_psa_embargo.R", encoding = "UTF-8")
+source("../secured-data/qm-elites/stage_3_psa_embargo.R", encoding = "UTF-8")
 
 ## Standardised and Absolute Mean Differences
 png("results/figures/figure_02.png", width = (1024*2), height = (768*2), units = 'px', res = 300)
