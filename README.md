@@ -24,10 +24,18 @@ quant-methods-elites
 |-- README.md
 |-- STATUS.md
 |-- code
+    |-- stage_0_descriptives.R
     |-- stage_1_data_cleaning.R
     |-- stage_2_glm.R
     |-- stage_3_cox.R
 |-- data
+    |-- raw
+        |-- chamber_1990_1994.csv
+        |-- chamber_1994_1998.csv
+        |-- chamber_1998_2002.csv
+        |-- chamber_2002_2006.csv
+        |-- chamber_2006_2010.csv
+        |-- chamber_2010_2014.csv
     |-- tidy
         |-- elite_survey_2010.csv
 |-- refs
@@ -50,7 +58,7 @@ quant-methods-elites
         |-- table_03.tex
 ```
 
-7 directories and 26 files.
+8 directories and 33 files.
 
 In addition, this README file in Markdown (MD) format provides specific information to ensure the replicability of the code.
 
@@ -109,9 +117,11 @@ Subfolders "results/figures" and "results/tables" include all plots and tables p
 
 - **Stage 3.** Run script "**stage_3_cox.R**" from the "code" folder. This script contains proportional hazards models for R. Model after matching is not available for the moment since the propensity score chunk is still under embargo.
 
+The file "**stage_0_descriptives.R**" contains a descriptive code for the Chamber of Deputies using a sliced data set from González-Bustamante and Cisternas (2016).[^4] This is not necessary  for the models.
+
 ### Codebook
 
-The file "**elite_survey_2010.csv**" in "data/tidy" subfolder is the anonymised, sliced data set on Chilean elite between 1990 and 2010. This set contains 386 observations.[^4]
+The file "**elite_survey_2010.csv**" in "data/tidy" subfolder is the anonymised, sliced data set on Chilean elite between 1990 and 2010. This set contains 386 observations.[^5]
 
 - **id**. Unique ID.
 
@@ -191,7 +201,7 @@ Please read our [code of conduct](CODE_OF_CONDUCT.md) first. Minor contributions
 
 ## Citation
 
-González-Bustamante, B. (2022). Quantitative Methods for Studying Elites: Demonstration for R (Version 0.9.4 -- Blue Surf) [Computer software]. DOI: [10.5281/zenodo.6098061](https://doi.org/10.5281/zenodo.6098061)
+González-Bustamante, B. (2022). Quantitative Methods for Studying Elites: Demonstration for R (Version 0.10.4 -- Divine Breeze) [Computer software]. DOI: [10.5281/zenodo.6098061](https://doi.org/10.5281/zenodo.6098061)
 
 ## Author
 
@@ -202,18 +212,25 @@ https://bgonzalezbustamante.com
 
 ## CRediT - Contributor Roles Taxonomy
 
-Bastián González-Bustamante ([ORCID iD 0000-0003-1510-6820](https://orcid.org/0000-0003-1510-6820)): Conceptualisation, data curation, formal analysis, investigation, methodology, resources, software, validation, visualisation, writing – original draft, and writing – review and editing
+Bastián González-Bustamante ([ORCID iD 0000-0003-1510-6820](https://orcid.org/0000-0003-1510-6820)): Conceptualisation, data curation, formal analysis, methodology, resources, software, validation, visualisation, writing – original draft, and writing – review and editing.
 
 Alfredo Joignant ([ORCID iD 0000-0002-5811-0988](https://orcid.org/0000-0002-5811-0988)): Data curation, funding acquisition, project administration, resources, supervision, and validation.
 
-ANID/FONDECYT 1100877 Research Team: Investigation.[^5]
+Gonzalo Delamaza ([ORCID iD 0000-0002-5418-3135](https://orcid.org/0000-0002-5418-3135)): Resources and supervision.
+
+Hernán Cuevas ([ORCID iD 0000-0002-4295-5652](https://orcid.org/0000-0002-4295-5652)): Resources and supervision.
+
+Manuel Gárate ([ORCID iD 0000-0002-0016-596X](https://orcid.org/0000-0002-0016-596X)): Resources and supervision.
+
+ANID/FONDECYT 1100877 Research Team: Investigation.[^6]
 
 ### Latest Revision
 
-[February 16, 2022](CHANGELOG.md).
+[February 18, 2022](CHANGELOG.md).
 
 [^1]: González-Bustamante, B. (*forthcoming*). Métodos cuantitativos para estudiar a las élites: Aplicaciones prácticas, sesgos y potencialidades. In F. Robles, I. Nercesián & M. Serna (eds.), *Elites económicas, Estado y dominación en América Latina: Cambios y continuidades en la época post COVID*. Buenos Aires: Siglo XXI Editores. 
 [^2]: Joignant, A., & González-Bustamante, B. (2014). El núcleo de la élite política chilena 1990-2010. Proyecto Fondecyt 1100877. Working Paper, Universidad Diego Portales.
 [^3]: González-Bustamante, B., & Olivares, A. (2022). Data Set on Chilean Ministers (1990-2014) (Version 3.1.0 -- Lively Wind) [Data set]. DOI: [10.5281/zenodo.5744536](https://doi.org/10.5281/zenodo.5744536).
-[^4]: Although the codebook is still in progress, the names of some variables are self-explanatory.
-[^5]: For contributions related to cabinet data, see this [GitHub repository](https://github.com/bgonzalezbustamante/chilean-ministers/).
+[^4]: González-Bustamante, B., & Cisternas (2016). Élites políticas en el poder legislativo chileno: La Cámara de Diputados (1990-2014). *Política, Revista de Ciencia Política, 54*(1), 19-52.
+[^5]: Although the codebook is still in progress, the names of some variables are self-explanatory.
+[^6]: For contributions related to cabinet data, see this [GitHub repository](https://github.com/bgonzalezbustamante/chilean-ministers/).
