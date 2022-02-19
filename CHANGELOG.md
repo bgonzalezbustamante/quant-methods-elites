@@ -9,6 +9,10 @@ All notable changes to "Quantitative Methods for Studying Elites: Demonstration 
 ### Changed
 - Minor corrections.
 
+## [0.10.5] - 2022-02-19
+### Changed
+- BibTeX file.
+
 ## [Released]
 
 ## [0.10.4] - 2022-02-18
