@@ -9,6 +9,12 @@ All notable changes to "Quantitative Methods for Studying Elites: Demonstration 
 ### Changed
 - Minor corrections.
 
+## [0.11.5] - 2022-02-20
+### Added
+- Quantitative methods for studying elites preprint on private OSF component.
+### Changed
+- BibTeX file.
+
 ## [0.10.5] - 2022-02-19
 ### Changed
 - BibTeX file.
