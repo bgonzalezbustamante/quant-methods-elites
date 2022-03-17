@@ -17,7 +17,7 @@ All notable changes to "Quantitative Methods for Studying Elites: Demonstration 
 
 ## [0.12.5] - 2022-03-17
 ### Added
-- MIT License on GitHub repository.
+- MIT license on GitHub repository.
 ### Changed
 - Minor corrections.
 
