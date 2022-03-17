@@ -3,9 +3,21 @@ All notable changes to "Quantitative Methods for Studying Elites: Demonstration 
 
 ## [Unreleased]
 
-## [1.0.0] - TBC
+## [2.0.0] - TBC
 ### Added
 - Code under embargo.
+### Changed
+- Minor corrections.
+
+## [1.0.0] - TBC
+### Changed
+- Minor corrections.
+
+## [Released]
+
+## [0.12.5] - 2022-03-17
+### Added
+- MIT License on GitHub repository.
 ### Changed
 - Minor corrections.
 
@@ -18,8 +30,6 @@ All notable changes to "Quantitative Methods for Studying Elites: Demonstration 
 ## [0.10.5] - 2022-02-19
 ### Changed
 - BibTeX file.
-
-## [Released]
 
 ## [0.10.4] - 2022-02-18
 ### Added
