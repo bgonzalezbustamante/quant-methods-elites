@@ -1,7 +1,7 @@
 # quant-methods-elites
 **Quantitative Methods for Studying Elites: Demonstration for R**
 
-[![Version](https://img.shields.io/badge/version-v0.12.5-blue.svg)](CHANGELOG.md) [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](STATUS.md) [![GitHub issues](https://img.shields.io/github/issues/bgonzalezbustamante/quant-methods-elites.svg)](https://github.com/bgonzalezbustamante/quant-methods-elites/issues/) [![GitHub issues-closed](https://img.shields.io/github/issues-closed/bgonzalezbustamante/quant-methods-elites.svg)](https://github.com/bgonzalezbustamante/quant-methods-elites/issues?q=is%3Aissue+is%3Aclosed) [![DOI](https://zenodo.org/badge/455969529.svg)](https://zenodo.org/badge/latestdoi/455969529) [![License](https://img.shields.io/badge/license-CC--BY--4.0-black)](LICENSE.md) [![R](https://img.shields.io/badge/made%20with-R%20v4.1.0-1f425f.svg)](https://cran.r-project.org/) [![Latex](https://img.shields.io/badge/made%20with-LaTeX-1f425f.svg)](https://www.latex-project.org/)
+[![Version](https://img.shields.io/badge/version-v0.13.5-blue.svg)](CHANGELOG.md) [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](STATUS.md) [![GitHub issues](https://img.shields.io/github/issues/bgonzalezbustamante/quant-methods-elites.svg)](https://github.com/bgonzalezbustamante/quant-methods-elites/issues/) [![GitHub issues-closed](https://img.shields.io/github/issues-closed/bgonzalezbustamante/quant-methods-elites.svg)](https://github.com/bgonzalezbustamante/quant-methods-elites/issues?q=is%3Aissue+is%3Aclosed) [![DOI](https://zenodo.org/badge/455969529.svg)](https://zenodo.org/badge/latestdoi/455969529) [![License](https://img.shields.io/badge/license-GNU%20GPLv3-black)](CCBY40.md) [![License](https://img.shields.io/badge/license-CC%20BY%204.0-black)](CCBY40.md) [![R](https://img.shields.io/badge/made%20with-R%20v4.1.0-1f425f.svg)](https://cran.r-project.org/) [![Latex](https://img.shields.io/badge/made%20with-LaTeX-1f425f.svg)](https://www.latex-project.org/)
 
 ## Overview
 
@@ -189,7 +189,7 @@ The file `elite_survey_2010.csv` in `data/tidy` subfolder is the anonymised, sli
 
 ## License
 
-The content of this project itself is licensed under a [Creative Commons Attribution 4.0 International license (CC BY 4.0)](CCBY40.md), and the underlying code used to format and display that content is licensed under a [MIT license](LICENSE.md).
+The content of this project itself is licensed under a [Creative Commons Attribution 4.0 International license (CC BY 4.0)](CCBY40.md), and the underlying code used to format and display that content is licensed under an [GNU GPLv3 license](LICENSE.md).
 
 ## Contribute
 
@@ -201,7 +201,7 @@ Please read our [code of conduct](CODE_OF_CONDUCT.md) first. Minor contributions
 
 ## Citation
 
-González-Bustamante, B. (2022). Quantitative Methods for Studying Elites: Demonstration for R (Version 0.12.5 -- TBC) [Computer software]. DOI: [10.5281/zenodo.6098061](https://doi.org/10.5281/zenodo.6098061)
+González-Bustamante, B. (2022). Quantitative Methods for Studying Elites: Demonstration for R (Version 0.13.5 -- TBC) [Computer software]. DOI: [10.5281/zenodo.6098061](https://doi.org/10.5281/zenodo.6098061)
 
 ## Author
 
