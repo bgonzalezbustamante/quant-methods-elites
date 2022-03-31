@@ -191,6 +191,8 @@ The file `elite_survey_2010.csv` in `data/tidy` subfolder is the anonymised, sli
 
 The content of this project itself is licensed under a [Creative Commons Attribution 4.0 International license (CC BY 4.0)](CCBY40.md), and the underlying code used to format and display that content is licensed under an [GNU GPLv3 license](LICENSE.md).
 
+The above implies that the data set may be shared, reused, adapted as long as appropriate acknowledgement is given. In addition, the code may be shared, reused, adapted as long as the source is disclosed, the changes are stated, and the same [GNU GPLv3 license](LICENSE.md) is used.
+
 ## Contribute
 
 Contributions are entirely welcome. You just need to [open an issue](https://github.com/bgonzalezbustamante/quant-methods-elites/issues/new) with your comment or idea.
