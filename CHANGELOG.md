@@ -100,7 +100,7 @@ All notable changes to "Quantitative Methods for Studying Elites: Demonstration 
 - Elite survey data cleaning code.
 - Anonymised, sliced data set in CSV UTF-8 format.
 - Changelog in MD format on GitHub repository.
-- License CC-BY Attribution 4.0 International on GitHub repository.
+- License CC BY 4.0 on GitHub repository.
 - Badges in SVG on GitHub repository.
 - Code of conduct in MD format.
 ### Removed
