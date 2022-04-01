@@ -15,6 +15,10 @@ All notable changes to "Quantitative Methods for Studying Elites: Demonstration 
 
 ## [Released]
 
+## [0.13.6] - 2022-04-01
+### Changed
+- Minor corrections.
+
 ## [0.13.5] - 2022-03-31
 ### Added
 - GNU GPLv3 license on GitHub repository.
