@@ -3,11 +3,41 @@ All notable changes to "Quantitative Methods for Studying Elites: Demonstration 
 
 ## [Unreleased]
 
-## [1.0.0] - TBC
+## [2.0.0] - TBC
 ### Added
 - Code under embargo.
 ### Changed
 - Minor corrections.
+
+## [1.0.0] - TBC
+### Changed
+- Minor corrections.
+
+## [Released]
+
+## [0.13.7] - 2022-04-05
+### Changed
+- Minor corrections.
+
+## [0.13.6] - 2022-04-01
+### Changed
+- Minor corrections.
+
+## [0.13.5] - 2022-03-31
+### Added
+- GNU GPLv3 license on GitHub repository.
+### Changed
+- Minor corrections.
+### Removed
+- MIT license on GitHub repository.
+
+## [0.12.5] - 2022-03-17
+### Added
+- MIT license on GitHub repository.
+### Changed
+- Minor corrections.
+### Deprecated
+- MIT license on GitHub repository.
 
 ## [0.11.5] - 2022-02-20
 ### Added
@@ -18,8 +48,6 @@ All notable changes to "Quantitative Methods for Studying Elites: Demonstration 
 ## [0.10.5] - 2022-02-19
 ### Changed
 - BibTeX file.
-
-## [Released]
 
 ## [0.10.4] - 2022-02-18
 ### Added
@@ -80,7 +108,7 @@ All notable changes to "Quantitative Methods for Studying Elites: Demonstration 
 - Elite survey data cleaning code.
 - Anonymised, sliced data set in CSV UTF-8 format.
 - Changelog in MD format on GitHub repository.
-- License CC-BY Attribution 4.0 International on GitHub repository.
+- License CC BY 4.0 on GitHub repository.
 - Badges in SVG on GitHub repository.
 - Code of conduct in MD format.
 ### Removed
