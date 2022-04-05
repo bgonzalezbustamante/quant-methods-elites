@@ -1,7 +1,7 @@
 # quant-methods-elites
 **Quantitative Methods for Studying Elites: Demonstration for R**
 
-[![Version](https://img.shields.io/badge/version-v0.13.6-blue.svg)](CHANGELOG.md) [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](STATUS.md) [![GitHub issues](https://img.shields.io/github/issues/bgonzalezbustamante/quant-methods-elites.svg)](https://github.com/bgonzalezbustamante/quant-methods-elites/issues/) [![GitHub issues-closed](https://img.shields.io/github/issues-closed/bgonzalezbustamante/quant-methods-elites.svg)](https://github.com/bgonzalezbustamante/quant-methods-elites/issues?q=is%3Aissue+is%3Aclosed) [![DOI](https://zenodo.org/badge/455969529.svg)](https://zenodo.org/badge/latestdoi/455969529) [![License](https://img.shields.io/badge/license-GNU%20GPLv3-black)](LICENSE.md) [![License](https://img.shields.io/badge/license-CC%20BY%204.0-black)](CCBY40.md) [![R](https://img.shields.io/badge/made%20with-R%20v4.1.0-1f425f.svg)](https://cran.r-project.org/) [![Latex](https://img.shields.io/badge/made%20with-LaTeX-1f425f.svg)](https://www.latex-project.org/)
+[![Version](https://img.shields.io/badge/version-v0.13.7-blue.svg)](CHANGELOG.md) [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](STATUS.md) [![GitHub issues](https://img.shields.io/github/issues/bgonzalezbustamante/quant-methods-elites.svg)](https://github.com/bgonzalezbustamante/quant-methods-elites/issues/) [![GitHub issues-closed](https://img.shields.io/github/issues-closed/bgonzalezbustamante/quant-methods-elites.svg)](https://github.com/bgonzalezbustamante/quant-methods-elites/issues?q=is%3Aissue+is%3Aclosed) [![DOI](https://zenodo.org/badge/455969529.svg)](https://zenodo.org/badge/latestdoi/455969529) [![License](https://img.shields.io/badge/license-GNU%20GPLv3-black)](LICENSE.md) [![License](https://img.shields.io/badge/license-CC%20BY%204.0-black)](CCBY40.md) [![R](https://img.shields.io/badge/made%20with-R%20v4.1.0-1f425f.svg)](https://cran.r-project.org/) [![Latex](https://img.shields.io/badge/made%20with-LaTeX-1f425f.svg)](https://www.latex-project.org/)
 
 ## Overview
 
@@ -72,11 +72,9 @@ Moreover, the repository is backed up on Hierarchical File Server `HFS` for reco
 
 ### Software
 
-We use `R v4.1.0 -- Camp Pontanezen`.
+We use `R v4.1.0 -- Camp Pontanezen` and the following packages: `foreign v0.8.81`, `performance v0.8.0`, `pscl v1.5.5`, `sjPlot v2.8.8`, `stargazer v5.2.2`,	`survival v3.2.11`, and `tidyverse v1.3.1`.[^4]
 
-Required R libraries are: "cobalt", "foreign", "ggplot2", "lmtest", "MatchIt", "performance", "pscl", "sandwich", "sjPlot", "stargazer", "survival", and "tidyverse".
-
-We recommend that users run replication code and scripts from the root directory using the `R` project `quant-methods-elites.Rproj` or, if they wish, import the anonymised, sliced data set from the Chilean Elite Survey (1990-2010) directly using the code below. The instructions for importing data on cabinets are available [**here**](https://github.com/bgonzalezbustamante/chilean-ministers/).
+We recommend that users run replication code and scripts from the root directory using the `R` project `quant-methods-elites.Rproj` or, if they wish, import the anonymised, sliced data set from the Chilean Elite Survey (1990-2010) directly using the code below. The instructions for importing data on cabinets are available on this [**GitHub repository**](https://github.com/bgonzalezbustamante/chilean-ministers/).
 
 ### Import Data
 
@@ -87,8 +85,8 @@ We recommend that users run replication code and scripts from the root directory
 github_1 <- "https://raw.githubusercontent.com/"
 github_2 <- "bgonzalezbustamante/quant-methods-elites/main/data/tidy/"
 
-## Chilean Ministers Data
-chilean_ministers <- read.csv(paste(github_1, github_2, "elite_survey_2010.csv", sep = ""),
+## Elite Survey Data
+elite_survey <- read.csv(paste(github_1, github_2, "elite_survey_2010.csv", sep = ""),
                               header = T, sep = ",", encoding = "UTF-8")
 ```
 #### Python Code
@@ -100,7 +98,7 @@ import pandas as pd
 github_1 = "https://raw.githubusercontent.com/"
 github_2 = "bgonzalezbustamante/quant-methods-elites/main/data/tidy/"
 
-## Chilean Ministers Data
+## Elite Survey Data
 url = github_1 + github_2 + "elite_survey_2010.csv"
 df = pd.read_csv(url, index_col=0)
 ```
@@ -117,11 +115,11 @@ Subfolders `results/figures` and `results/tables` include all plots and tables p
 
 - **Stage 3.** Run script `stage_3_cox.R` from the `code` folder. This script contains proportional hazards models for `R`. Model after matching is not available for the moment since the propensity score chunk is still under embargo.
 
-The file `stage_0_descriptives.R` contains a descriptive code for the Chamber of Deputies using a sliced data set from González-Bustamante and Cisternas (2016).[^4] This is not necessary  for the models.
+The file `stage_0_descriptives.R` contains a descriptive code for the Chamber of Deputies using a sliced data set from González-Bustamante and Cisternas (2016).[^5] This is not necessary  for the models.
 
 ### Codebook
 
-The file `elite_survey_2010.csv` in `data/tidy` subfolder is the anonymised, sliced data set on Chilean elite between 1990 and 2010. This set contains 386 observations.[^5]
+The file `elite_survey_2010.csv` in `data/tidy` subfolder is the anonymised, sliced data set on Chilean elite between 1990 and 2010. This set contains 386 observations.[^6]
 
 - `id`. Unique ID.
 
@@ -203,7 +201,7 @@ Please read our [code of conduct](CODE_OF_CONDUCT.md) first. Minor contributions
 
 ## Citation
 
-González-Bustamante, B. (2022). Quantitative Methods for Studying Elites: Demonstration for R (Version 0.13.6 -- TBC) [Computer software]. DOI: [10.5281/zenodo.6098061](https://doi.org/10.5281/zenodo.6098061)
+González-Bustamante, B. (2022). Quantitative Methods for Studying Elites: Demonstration for R (Version 0.13.7 -- Noisy Sun) [Computer software]. DOI: [10.5281/zenodo.6098061](https://doi.org/10.5281/zenodo.6098061)
 
 ## Author
 
@@ -224,15 +222,16 @@ Hernán Cuevas ([ORCID iD 0000-0002-4295-5652](https://orcid.org/0000-0002-4295-
 
 Manuel Gárate ([ORCID iD 0000-0002-0016-596X](https://orcid.org/0000-0002-0016-596X)): Resources and supervision.
 
-ANID/FONDECYT 1100877 Research Team: Investigation.[^6]
+ANID/FONDECYT 1100877 Research Team: Investigation.[^7]
 
 ### Latest Revision
 
-[April 1, 2022](CHANGELOG.md).
+[April 5, 2022](CHANGELOG.md).
 
-[^1]: González-Bustamante, B. (*forthcoming*). Métodos cuantitativos para estudiar a las élites: Aplicaciones prácticas, sesgos y potencialidades. In F. Robles, I. Nercesián & M. Serna (eds.), *Elites económicas, Estado y dominación en América Latina: Cambios y continuidades en la época post COVID*. Buenos Aires: Siglo XXI Editores.
+[^1]: González-Bustamante, B. (2022, *forthcoming*). Métodos cuantitativos para estudiar a las élites: Aplicaciones prácticas, sesgos y potencialidades. In F. Robles, I. Nercesián & M. Serna (eds.), *Elites económicas, Estado y dominación en América Latina: Cambios y continuidades en la época post COVID*. Buenos Aires: Siglo XXI Editores.
 [^2]: Joignant, A., & González-Bustamante, B. (2014). El núcleo de la élite política chilena 1990-2010. Proyecto Fondecyt 1100877. Working Paper, Universidad Diego Portales.
-[^3]: González-Bustamante, B., & Olivares, A. (2022). Data Set on Chilean Ministers (1990-2014) (Version 3.2.3 -- Wispy Boat) [Data set]. DOI: [10.5281/zenodo.5744536](https://doi.org/10.5281/zenodo.5744536).
-[^4]: González-Bustamante, B., & Cisternas (2016). Élites políticas en el poder legislativo chileno: La Cámara de Diputados (1990-2014). *Política, Revista de Ciencia Política, 54*(1), 19-52.
-[^5]: Although the codebook is still in progress, the names of some variables are self-explanatory.
-[^6]: For contributions related to cabinet data, see this [GitHub repository](https://github.com/bgonzalezbustamante/chilean-ministers/).
+[^3]: González-Bustamante, B., & Olivares, A. (2022). Data Set on Chilean Ministers (1990-2014) (Version 3.3.6 -- Dry Bonus) [Data set]. DOI: [10.5281/zenodo.5744536](https://doi.org/10.5281/zenodo.5744536).
+[^4]: This list excludes packages from the propensity score chunk that is still under embargo.
+[^5]: González-Bustamante, B., & Cisternas (2016). Élites políticas en el poder legislativo chileno: La Cámara de Diputados (1990-2014). *Política, Revista de Ciencia Política, 54*(1), 19-52.
+[^6]: Although the codebook is still in progress, the names of some variables are self-explanatory.
+[^7]: For contributions related to cabinet data, see this [GitHub repository](https://github.com/bgonzalezbustamante/chilean-ministers/).
