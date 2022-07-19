@@ -228,7 +228,7 @@ ANID/FONDECYT 1100877 Research Team: Investigation.[^7]
 
 [July 19, 2022](CHANGELOG.md).
 
-[^1]: González-Bustamante, B. (2022, *forthcoming*). Métodos cuantitativos para estudiar a las élites: Aplicaciones prácticas, sesgos y potencialidades. In F. Robles, I. Nercesián & M. Serna (eds.), *Elites económicas, Estado y dominación en América Latina: Cambios y continuidades en la época post COVID*. Buenos Aires: Siglo XXI Editores.
+[^1]: González-Bustamante, B. (2022). Métodos cuantitativos para estudiar a las élites: Aplicaciones prácticas, sesgos y potencialidades. Preprint upon request.
 [^2]: Joignant, A., & González-Bustamante, B. (2014). El núcleo de la élite política chilena 1990-2010. Proyecto Fondecyt 1100877. Working Paper, Universidad Diego Portales.
 [^3]: González-Bustamante, B., & Olivares, A. (2022). Data Set on Chilean Ministers (1990-2014) (Version 3.3.6 -- Dry Bonus) [Data set]. DOI: [10.5281/zenodo.5744536](https://doi.org/10.5281/zenodo.5744536).
 [^4]: This list excludes packages from the propensity score chunk that is still under embargo.
