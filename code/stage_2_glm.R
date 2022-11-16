@@ -128,7 +128,7 @@ model_6 <- glm(senator ~ exp_business + I(sex) + as.factor(pol_cap) + edu
 source("../secured-data/qm-elites/stage_2_psa_embargo.R", encoding = "UTF-8")
 
 ## Standardised and Absolute Mean Differences
-png("results/figures/figure_01a.png", width = (1024*2), height = (768*2), units = 'px', res = 300)
+## png("results/figures/figure_01a.png", width = (1024*2), height = (768*2), units = 'px', res = 300)
 love.plot(m_out_1, stat = "mean.diffs", poly = 1, abs = TRUE,
           drop.distance = TRUE, thresholds = c(m = .1),
           var.order = "unadjusted",
@@ -138,10 +138,10 @@ love.plot(m_out_1, stat = "mean.diffs", poly = 1, abs = TRUE,
           sample.names = c("Sin Matching", "Full Matching"),
           line = FALSE, stars = "none", title = NULL) + theme_minimal(base_size = 12) +
   theme(plot.margin = unit(c(0.5,0.5,0.5,0.5), "cm"), legend.title = element_blank()) + xlab("Gabinete")
-dev.off()
+## dev.off()
 
 ## Standardised and Absolute Mean Differences
-png("results/figures/figure_01b.png", width = (1024*2), height = (768*2), units = 'px', res = 300)
+## png("results/figures/figure_01b.png", width = (1024*2), height = (768*2), units = 'px', res = 300)
 love.plot(m_out_2, stat = "mean.diffs", poly = 1, abs = TRUE,
           drop.distance = TRUE, thresholds = c(m = .1),
           var.order = "unadjusted",
@@ -151,7 +151,7 @@ love.plot(m_out_2, stat = "mean.diffs", poly = 1, abs = TRUE,
           sample.names = c("Sin Matching", "Full Matching"),
           line = FALSE, stars = "none", title = NULL) + theme_minimal(base_size = 12) +
   theme(plot.margin = unit(c(0.5,0.5,0.5,0.5), "cm"), legend.title = element_blank()) + xlab("Senado")
-dev.off()
+## dev.off()
 
 ## Check Multicollinearity
 check_collinearity(model_4)
