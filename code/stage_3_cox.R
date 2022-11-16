@@ -103,7 +103,7 @@ res.zph3 <- cox.zph(cox_3)
 
 stargazer(cox_1, cox_2, cox_3,
           type = "latex", header = FALSE, style = "ajps", out = "results/tables/table_03.tex",
-          title = "Modelos de riesgos proporcionales de Cox y resultados después del matching para salidas del gabinete en Chile (1990-2010)",
+          title = "Modelos de riesgos proporcionales de Cox y resultados después del matching para salidas del gabinete en Chile (1990-2014)",
           dep.var.labels = c("Umbral 75%", "Salida censurada"), notes.align = "c",
           model.numbers = FALSE, omit = "president",
           column.labels = c("Modelo VIII","Modelo IX","Modelo X"),
