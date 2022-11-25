@@ -9,9 +9,11 @@
 ## Date: February 2022
 
 ## Bastián González-Bustamante (University of Oxford, UK)
+## https://bgonzalezbustamante.com
 
 ## GitHub Repository
 ## github.com/bgonzalezbustamante/quant-mixed-methods-elites
+## DOI: 10.5281/zenodo.6098061
 
 ## +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
