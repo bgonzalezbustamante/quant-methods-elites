@@ -79,7 +79,7 @@ Moreover, the repository is backed up on Hierarchical File Server `HFS` for reco
 
 ### Software
 
-We use `R v4.1.0 -- Camp Pontanezen` and the following packages: `foreign v0.8-81`, `performance v0.8.0`, `pscl v1.5.5`, `sjPlot v2.8.9`, `stargazer v5.2.2`,	`survival v3.2-11` and `tidyverse v1.3.1`. In addition, we have used `ggplot2 v3.3.3` as a dependency.
+We used `R v4.1.0 -- Camp Pontanezen` and the following packages: `foreign v0.8-81`, `performance v0.8.0`, `pscl v1.5.5`, `sjPlot v2.8.9`, `stargazer v5.2.2`,	`survival v3.2-11` and `tidyverse v1.3.1`. In addition, we have used `ggplot2 v3.3.3` as a dependency.
 
 Propensity score estimation, under embargo, was carried out using `MatchIt v4.2.0`, `cobalt v4.3.1`, `lmtest v0.9-38`, `sandwich v3.0-1` and, as a dependency, `optmatch v0.9-14`. A more complex code is already released as supplementary material in González-Bustamante (2022).[^4]
 
@@ -162,7 +162,7 @@ The file `elite_survey_2010.csv` in `data/tidy` subfolder is the anonymised, sli
 
 - `education`. A nominal variable indicating the highest educational level: primary school, high school, BA/BPS completed, technical career achieved, unfinished college or technical career, graduate studies without a degree, MA/MBA, PhD, PhD candidate.
 
-- `school`. A nominal variable indicating the type of primary school: secular private, religious private, subsidised private, local government school, or public primary school,
+- `school`. A nominal variable indicating the type of primary school: secular private, religious private, subsidised private, local government school, or public primary school.
 
 - `family_capital`. A dummy variable indicating whether the case's parents held government first-line positions (*i.e.*, minister, undersecretary or senior public manager) or was a congressman or congresswoman.
 
@@ -170,31 +170,31 @@ The file `elite_survey_2010.csv` in `data/tidy` subfolder is the anonymised, sli
 
 - `capital_mother`. A dummy variable indicating whether the case's mother held government first-line positions (*i.e.*, minister, undersecretary or senior public manager) or was a congressman or congresswoman.
 
-- `party_1`. A nominal variable indicating partisanship (first option).
+- `party_1`. A nominal variable indicating partisanship in chronological order (first option).
 
-- `party_2`. A nominal variable indicating partisanship (second option).
+- `party_2`. A nominal variable indicating partisanship in chronological order (second option).
 
-- `party_3`. A nominal variable indicating partisanship (third option).
+- `party_3`. A nominal variable indicating partisanship in chronological order (third option).
 
-- `party_4`. A nominal variable indicating partisanship (fourth option).
+- `party_4`. A nominal variable indicating partisanship in chronological order (fourth option).
 
-- `t1`. A nominal variable indicating public and private careers in chronological order (first post)
+- `t1`. A nominal variable indicating public and private careers in chronological order (first post).
 
-- `t2`. A nominal variable indicating public and private careers in chronological order (second post)
+- `t2`. A nominal variable indicating public and private careers in chronological order (second post).
 
-- `t3`. A nominal variable indicating public and private careers in chronological order (third post)
+- `t3`. A nominal variable indicating public and private careers in chronological order (third post).
 
-- `t4`. A nominal variable indicating public and private careers in chronological order (fourth post)
+- `t4`. A nominal variable indicating public and private careers in chronological order (fourth post).
 
-- `t5`. A nominal variable indicating public and private careers in chronological order (fifth post)
+- `t5`. A nominal variable indicating public and private careers in chronological order (fifth post).
 
-- `t6`. A nominal variable indicating public and private careers in chronological order (sixth post)
+- `t6`. A nominal variable indicating public and private careers in chronological order (sixth post).
 
-- `t7`. A nominal variable indicating public and private careers in chronological order (seventh post)
+- `t7`. A nominal variable indicating public and private careers in chronological order (seventh post).
 
-- `t8`. A nominal variable indicating public and private careers in chronological order (eighth post)
+- `t8`. A nominal variable indicating public and private careers in chronological order (eighth post).
 
-- `t9`. A nominal variable indicating public and private careers in chronological order (ninth post)
+- `t9`. A nominal variable indicating public and private careers in chronological order (ninth post).
 
 - `exp_business`. A dummy variable indicating whether the case has a previous trajectory as a CEO.
 
