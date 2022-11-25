@@ -1,11 +1,11 @@
 # quant-methods-elites
 **Quantitative Methods for Studying Elites: Demonstration for R**
 
-[![Version](https://img.shields.io/badge/version-v0.13.7-blue.svg)](CHANGELOG.md) [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](STATUS.md) [![GitHub issues](https://img.shields.io/github/issues/bgonzalezbustamante/quant-methods-elites.svg)](https://github.com/bgonzalezbustamante/quant-methods-elites/issues/) [![GitHub issues-closed](https://img.shields.io/github/issues-closed/bgonzalezbustamante/quant-methods-elites.svg)](https://github.com/bgonzalezbustamante/quant-methods-elites/issues?q=is%3Aissue+is%3Aclosed) [![DOI](https://zenodo.org/badge/455969529.svg)](https://zenodo.org/badge/latestdoi/455969529) [![License](https://img.shields.io/badge/license-GNU%20GPLv3-black)](LICENSE.md) [![License](https://img.shields.io/badge/license-CC%20BY%204.0-black)](CCBY40.md) [![R](https://img.shields.io/badge/made%20with-R%20v4.1.0-1f425f.svg)](https://cran.r-project.org/) [![Latex](https://img.shields.io/badge/made%20with-LaTeX-1f425f.svg)](https://www.latex-project.org/)
+[![Version](https://img.shields.io/badge/version-v1.0.0-blue.svg)](CHANGELOG.md) [![Project Status: Inactive – The project has reached a stable, usable state but is no longer being actively developed; support/maintenance will be provided as time allows.](https://www.repostatus.org/badges/latest/inactive.svg)](STATUS.md) [![GitHub issues](https://img.shields.io/github/issues/bgonzalezbustamante/quant-methods-elites.svg)](https://github.com/bgonzalezbustamante/quant-methods-elites/issues/) [![GitHub issues-closed](https://img.shields.io/github/issues-closed/bgonzalezbustamante/quant-methods-elites.svg)](https://github.com/bgonzalezbustamante/quant-methods-elites/issues?q=is%3Aissue+is%3Aclosed) [![DOI](https://zenodo.org/badge/455969529.svg)](https://zenodo.org/badge/latestdoi/455969529) [![License](https://img.shields.io/badge/license-GNU%20GPLv3-black)](LICENSE-GPL.md) [![License](https://img.shields.io/badge/license-CC%20BY%204.0-black)](LICENSE-CC.md) [![R](https://img.shields.io/badge/made%20with-R%20v4.1.0-1f425f.svg)](https://cran.r-project.org/) [![Latex](https://img.shields.io/badge/made%20with-LaTeX-1f425f.svg)](https://www.latex-project.org/)
 
 ## Overview
 
-This repository contains demonstrations for `R` of generalised linear models and proportional hazards Cox regressions to measure the impact of individual business trajectories on the access and permanence in political positions in the Chilean executive and legislative branches. These demonstrations are the primary analysis of the forthcoming methodological book chapter entitled “*Métodos cuantitativos para estudiar a las élites: Aplicaciones prácticas, sesgos y potencialidades*”.[^1]
+This repository contains demonstrations for `R` of generalised linear models and proportional hazards Cox regressions to measure the impact of individual business trajectories on the access and permanence in political positions in the Chilean executive and legislative branches. These demonstrations are the primary analysis of the forthcoming methodological article entitled “*Métodos cuantitativos para estudiar a las élites: Aplicaciones prácticas, sesgos y potencialidades*”.[^1]
 
 In addition, it contains an anonymised, sliced data set from the Chilean Elite Survey (1990-2010) (*N* = 386) in Comma-Separated Values `CSV` format with Unicode encoding `UTF-8` based on the latest update by Joignant and González-Bustamante (2014).[^2] The second data set used in the demonstrations is González-Bustamante and Olivares (2022).[^3]
 
@@ -15,14 +15,17 @@ This code and data are stored with version control on a GitHub repository. Furth
 
 ``` r
 quant-methods-elites
+|-- .Rprofile
 |-- .gitignore
 |-- CHANGELOG.md
 |-- CITATION.cff
 |-- CODE_OF_CONDUCT.md
-|-- LICENSE.md
-|-- quant-methods-elites.Rproj
+|-- LICENSE-CC.md
+|-- LICENSE-GPL.md
 |-- README.md
 |-- STATUS.md
+|-- quant-methods-elites.Rproj
+|-- renv.lock
 |-- code
     |-- stage_0_descriptives.R
     |-- stage_1_data_cleaning.R
@@ -40,6 +43,10 @@ quant-methods-elites
         |-- elite_survey_2010.csv
 |-- refs
     |-- BIB-QM-Elites.bib
+|-- renv
+    |-- .gitignore
+    |-- activate.R
+    |-- settings.dcf
 |-- results
     |-- figures
         |-- figure_01a.png
@@ -58,7 +65,7 @@ quant-methods-elites
         |-- table_03.tex
 ```
 
-8 directories and 33 files.
+9 directories and 39 files.
 
 In addition, this README file in Markdown `MD` format provides specific information to ensure the replicability of the code.
 
@@ -72,7 +79,9 @@ Moreover, the repository is backed up on Hierarchical File Server `HFS` for reco
 
 ### Software
 
-We use `R v4.1.0 -- Camp Pontanezen` and the following packages: `foreign v0.8.81`, `performance v0.8.0`, `pscl v1.5.5`, `sjPlot v2.8.8`, `stargazer v5.2.2`,	`survival v3.2.11`, and `tidyverse v1.3.1`.[^4]
+We use `R v4.1.0 -- Camp Pontanezen` and the following packages: `foreign v0.8-81`, `performance v0.8.0`, `pscl v1.5.5`, `sjPlot v2.8.9`, `stargazer v5.2.2`,	`survival v3.2-11` and `tidyverse v1.3.1`. In addition, we have used `ggplot2 v3.3.3` as a dependency.
+
+Propensity score estimation, under embargo, was carried out using `MatchIt v4.2.0`, `cobalt v4.3.1`, `lmtest v0.9-38`, `sandwich v3.0-1` and, as a dependency, `optmatch v0.9-14`. A more complex code is already released as supplementary material in González-Bustamante (2022).[^4]
 
 We recommend that users run replication code and scripts from the root directory using the `R` project `quant-methods-elites.Rproj` or, if they wish, import the anonymised, sliced data set from the Chilean Elite Survey (1990-2010) directly using the code below. The instructions for importing data on cabinets are available on this [**GitHub repository**](https://github.com/bgonzalezbustamante/chilean-ministers/).
 
@@ -115,81 +124,103 @@ Subfolders `results/figures` and `results/tables` include all plots and tables p
 
 - **Stage 3.** Run script `stage_3_cox.R` from the `code` folder. This script contains proportional hazards models for `R`. Model after matching is not available for the moment since the propensity score chunk is still under embargo.
 
-The file `stage_0_descriptives.R` contains a descriptive code for the Chamber of Deputies using a sliced data set from González-Bustamante and Cisternas (2016).[^5] This is not necessary  for the models.
+The file `stage_0_descriptives.R` contains a descriptive code for the Chamber of Deputies using a sliced data set from González-Bustamante and Cisternas (2016).[^5] This is not necessary for the models.
+
+To ensure the replicability of our analyses, we used project-local R dependency with `renv v0.16.0`.
+
+``` r
+library(renv)
+renv::init()
+renv::install("tidyverse@1.3.1")
+renv::install("foreign@0.8-81")
+renv::install("performance@0.8.0")
+renv::install("pscl@1.5.5")
+renv::install("stargazer@5.2.2")
+renv::install("sjPlot@2.8.9")
+renv::install("ggplot2@3.3.3")
+renv::install("MatchIt@4.2.0") ## PSA code under embargo
+renv::install("cobalt@4.3.1") ## PSA code under embargo
+renv::install("lmtest@0.9-38") ## PSA code under embargo
+renv::install("sandwich@3.0-1") ## PSA code under embargo
+renv::install("optmatch@0.9-14") ## PSA code under embargo
+renv::install("survival@3.2-11")
+renv::snapshot()
+renv::status()
+```
 
 ### Codebook
 
-The file `elite_survey_2010.csv` in `data/tidy` subfolder is the anonymised, sliced data set on Chilean elite between 1990 and 2010. This set contains 386 observations.[^6]
+The file `elite_survey_2010.csv` in `data/tidy` subfolder is the anonymised, sliced data set on Chilean elite between 1990 and 2010. This set contains 386 observations.
 
-- `id`. Unique ID.
+- `id`. Unique ID per case.
 
 - `sex`. Case sex.
 
 - `dob`. Date of birth.
 
-- `political_capital`.
+- `political_capital`. A nominal variable indicating the highest post in a political party: national, regional, local level, none formal position.
 
-- `education`.
+- `education`. A nominal variable indicating the highest educational level: primary school, high school, BA/BPS completed, technical career achieved, unfinished college or technical career, graduate studies without a degree, MA/MBA, PhD, PhD candidate.
 
-- `school`.
+- `school`. A nominal variable indicating the type of primary school: secular private, religious private, subsidised private, local government school, or public primary school,
 
-- `family_capital`.
+- `family_capital`. A dummy variable indicating whether the case's parents held government first-line positions (*i.e.*, minister, undersecretary or senior public manager) or was a congressman or congresswoman.
 
-- `capital_father`.
+- `capital_father`. A dummy variable indicating whether the case's father held government first-line positions (*i.e.*, minister, undersecretary or senior public manager) or was a congressman or congresswoman.
 
-- `capital_mother`.
+- `capital_mother`. A dummy variable indicating whether the case's mother held government first-line positions (*i.e.*, minister, undersecretary or senior public manager) or was a congressman or congresswoman.
 
-- `party_1`.
+- `party_1`. A nominal variable indicating partisanship (first option).
 
-- `party_2`.
+- `party_2`. A nominal variable indicating partisanship (second option).
 
-- `party_3`.
+- `party_3`. A nominal variable indicating partisanship (third option).
 
-- `party_4`.
+- `party_4`. A nominal variable indicating partisanship (fourth option).
 
-- `t1`.
+- `t1`. A nominal variable indicating public and private careers in chronological order (first post)
 
-- `t2`.
+- `t2`. A nominal variable indicating public and private careers in chronological order (second post)
 
-- `t3`.
+- `t3`. A nominal variable indicating public and private careers in chronological order (third post)
 
-- `t4`.
+- `t4`. A nominal variable indicating public and private careers in chronological order (fourth post)
 
-- `t5`.
+- `t5`. A nominal variable indicating public and private careers in chronological order (fifth post)
 
-- `t6`.
+- `t6`. A nominal variable indicating public and private careers in chronological order (sixth post)
 
-- `t7`.
+- `t7`. A nominal variable indicating public and private careers in chronological order (seventh post)
 
-- `t8`.
+- `t8`. A nominal variable indicating public and private careers in chronological order (eighth post)
 
-- `t9`.
+- `t9`. A nominal variable indicating public and private careers in chronological order (ninth post)
 
-- `exp_business`.
+- `exp_business`. A dummy variable indicating whether the case has a previous trajectory as a CEO.
 
-- `president`.
+- `president`. A dummy variable indicating whether the case's highest political post was president.
 
-- `minister`.
+- `minister`. A dummy variable indicating whether the case's highest political post was minister.
 
-- `senator`.
+- `senator`. A dummy variable indicating whether the case's highest political post was senator.
 
-- `deputy`.
+- `deputy`. A dummy variable indicating whether the case's highest political post was deputy.
 
-- `undersecretary`.
+- `undersecretary`. A dummy variable indicating whether the case's highest political post was undersecretary (*i.e.*, viceminister).
 
-- `indendant`.
+- `intendant`. A dummy variable indicating whether the case's highest political post was intendant.
 
-- `ceo`.
+- `ceo`. A dummy variable indicating whether the case's highest political post was senior public manager.
 
-- `cabinet_chief`.
+- `cabinet_chief`. A dummy variable indicating whether the case's highest political post was cabinet chief.
 
-- `party_leader`.
+- `party_leader`. A dummy variable indicating whether the case's highest political post was party leader.
 
 ## License
 
-The content of this project itself is licensed under a [Creative Commons Attribution 4.0 International license (CC BY 4.0)](CCBY40.md), and the underlying code used to format and display that content is licensed under an [GNU GPLv3 license](LICENSE.md).
+The content of this project itself is licensed under a [Creative Commons Attribution 4.0 International license (CC BY 4.0)](LICENSE-CC.md), and the underlying code used to format and display that content is licensed under an [GNU GPLv3 license](LICENSE-GPL.md).
 
-The above implies that the data set may be shared, reused, and adapted as long as appropriate acknowledgement is given. In addition, the code may be shared, reused, and adapted as long as the source is disclosed, the changes are stated, and the same [GNU GPLv3 license](LICENSE.md) is used.
+The above implies that the data set may be shared, reused, and adapted as long as appropriate acknowledgement is given. In addition, the code may be shared, reused, and adapted as long as the source is disclosed, the changes are stated, and the same [GNU GPLv3 license](LICENSE-GPL.md) is used.
 
 ## Contribute
 
@@ -201,7 +232,7 @@ Please read our [code of conduct](CODE_OF_CONDUCT.md) first. Minor contributions
 
 ## Citation
 
-González-Bustamante, B. (2022). Quantitative Methods for Studying Elites: Demonstration for R (Version 0.13.7 -- Noisy Sun) [Computer software]. DOI: [10.5281/zenodo.6098061](https://doi.org/10.5281/zenodo.6098061)
+González-Bustamante, B. (2022). Quantitative Methods for Studying Elites: Demonstration for R (Version 1.0.0 -- Quiet Hill) [Computer software]. DOI: [10.5281/zenodo.6098061](https://doi.org/10.5281/zenodo.6098061)
 
 ## Author
 
@@ -222,16 +253,15 @@ Hernán Cuevas ([ORCID iD 0000-0002-4295-5652](https://orcid.org/0000-0002-4295-
 
 Manuel Gárate ([ORCID iD 0000-0002-0016-596X](https://orcid.org/0000-0002-0016-596X)): Resources and supervision.
 
-ANID/FONDECYT 1100877 Research Team: Investigation.[^7]
+ANID/FONDECYT 1100877 Research Team: Investigation.[^6]
 
 ### Latest Revision
 
-[April 5, 2022](CHANGELOG.md).
+[November 25, 2022](CHANGELOG.md).
 
-[^1]: González-Bustamante, B. (2022, *forthcoming*). Métodos cuantitativos para estudiar a las élites: Aplicaciones prácticas, sesgos y potencialidades. In F. Robles, I. Nercesián & M. Serna (eds.), *Elites económicas, Estado y dominación en América Latina: Cambios y continuidades en la época post COVID*. Buenos Aires: Siglo XXI Editores.
+[^1]: González-Bustamante, B. (2022, *forthcoming*). Métodos cuantitativos para estudiar a las élites: Aplicaciones prácticas, sesgos y potencialidades. *Revista Chilena de Derecho y Ciencia Política*. SocArXiv: [10.31235/osf.io/5m2ur](https://doi.org/10.31235/osf.io/5m2ur).
 [^2]: Joignant, A., & González-Bustamante, B. (2014). El núcleo de la élite política chilena 1990-2010. Proyecto Fondecyt 1100877. Working Paper, Universidad Diego Portales.
 [^3]: González-Bustamante, B., & Olivares, A. (2022). Data Set on Chilean Ministers (1990-2014) (Version 3.3.6 -- Dry Bonus) [Data set]. DOI: [10.5281/zenodo.5744536](https://doi.org/10.5281/zenodo.5744536).
-[^4]: This list excludes packages from the propensity score chunk that is still under embargo.
+[^4]: González-Bustamante, B. (2022). Ministerial Stability During Presidential Approval Crises: The Moderating Effect of Ministers’ Attributes on Dismissals in Brazil and Chile. *The British Journal of Politics and International Relations*. OnlineFirst. DOI: [10.1177/13691481221124850](https://doi.org/10.1177/13691481221124850).
 [^5]: González-Bustamante, B., & Cisternas (2016). Élites políticas en el poder legislativo chileno: La Cámara de Diputados (1990-2014). *Política, Revista de Ciencia Política, 54*(1), 19-52.
-[^6]: Although the codebook is still in progress, the names of some variables are self-explanatory.
-[^7]: For contributions related to cabinet data, see this [GitHub repository](https://github.com/bgonzalezbustamante/chilean-ministers/).
+[^6]: For contributions related to cabinet data, see this [GitHub repository](https://github.com/bgonzalezbustamante/chilean-ministers/).
