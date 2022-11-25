@@ -9,9 +9,11 @@
 ## Date: February 2022
 
 ## Bastián González-Bustamante (University of Oxford, UK)
+## https://bgonzalezbustamante.com
 
 ## GitHub Repository
 ## github.com/bgonzalezbustamante/quant-mixed-methods-elites
+## DOI: 10.5281/zenodo.6098061
 
 ## +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -80,7 +82,7 @@ cox_2 <- coxph(Surv(time_minister, exit == 1) ~ exp_business + I(sex) + non_part
 source("../secured-data/qm-elites/stage_3_psa_embargo.R", encoding = "UTF-8")
 
 ## Standardised and Absolute Mean Differences
-png("results/figures/figure_02.png", width = (1024*2), height = (768*2), units = 'px', res = 300)
+## png("results/figures/figure_02.png", width = (1024*2), height = (768*2), units = 'px', res = 300)
 love.plot(c_out_1, stat = "mean.diffs", poly = 1, abs = TRUE,
           drop.distance = TRUE, thresholds = c(m = .1),
           var.order = "unadjusted",
@@ -90,7 +92,7 @@ love.plot(c_out_1, stat = "mean.diffs", poly = 1, abs = TRUE,
           sample.names = c("Sin Matching", "Full Matching"),
           line = FALSE, stars = "none", title = NULL) + theme_minimal(base_size = 12) +
   theme(plot.margin = unit(c(0.5,0.5,0.5,0.5), "cm"), legend.title = element_blank()) + xlab("Gabinete")
-dev.off()
+## dev.off()
 
 ## Check Multicollinearity
 performance::check_collinearity(cox_1)
@@ -104,6 +106,7 @@ res.zph3 <- cox.zph(cox_3)
 stargazer(cox_1, cox_2, cox_3,
           type = "latex", header = FALSE, style = "ajps", out = "results/tables/table_03.tex",
           title = "Modelos de riesgos proporcionales de Cox y resultados después del matching para salidas del gabinete en Chile (1990-2014)",
+          se = list(NULL, NULL, round(summary(cox_3)[7]$coefficients[4], 3)),
           dep.var.labels = c("Umbral 75%", "Salida censurada"), notes.align = "c",
           model.numbers = FALSE, omit = "president",
           column.labels = c("Modelo VIII","Modelo IX","Modelo X"),
