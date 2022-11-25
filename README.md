@@ -15,14 +15,17 @@ This code and data are stored with version control on a GitHub repository. Furth
 
 ``` r
 quant-methods-elites
+|-- .Rprofile
 |-- .gitignore
 |-- CHANGELOG.md
 |-- CITATION.cff
 |-- CODE_OF_CONDUCT.md
-|-- LICENSE.md
-|-- quant-methods-elites.Rproj
+|-- LICENSE-CC.md
+|-- LICENSE-GPL.md
 |-- README.md
 |-- STATUS.md
+|-- quant-methods-elites.Rproj
+|-- renv.lock
 |-- code
     |-- stage_0_descriptives.R
     |-- stage_1_data_cleaning.R
@@ -40,6 +43,10 @@ quant-methods-elites
         |-- elite_survey_2010.csv
 |-- refs
     |-- BIB-QM-Elites.bib
+|-- renv
+    |-- .gitignore
+    |-- activate.R
+    |-- settings.dcf
 |-- results
     |-- figures
         |-- figure_01a.png
@@ -58,7 +65,7 @@ quant-methods-elites
         |-- table_03.tex
 ```
 
-8 directories and 33 files.
+9 directories and 39 files.
 
 In addition, this README file in Markdown `MD` format provides specific information to ensure the replicability of the code.
 
