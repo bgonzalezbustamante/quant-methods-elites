@@ -6,14 +6,14 @@ All notable changes to "Quantitative Methods for Studying Elites: Demonstration 
 ## [2.0.0] - TBC
 ### Added
 - Code under embargo.
-### Changed
-- Minor corrections.
-
-## [1.0.0] - TBC
-### Changed
-- Minor corrections.
 
 ## [Released]
+
+## [1.0.0] - 2022-11-25
+### Added
+- Project-local R dependency.
+### Changed
+- Minor corrections.
 
 ## [0.13.11] - 2022-11-16
 ### Changed
