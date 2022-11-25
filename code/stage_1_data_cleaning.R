@@ -9,9 +9,11 @@
 ## Date: February 2022
 
 ## Bastián González-Bustamante (University of Oxford, UK)
+## https://bgonzalezbustamante.com
 
 ## GitHub Repository
 ## github.com/bgonzalezbustamante/quant-mixed-methods-elites
+## DOI: 10.5281/zenodo.6098061
 
 ## +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -87,7 +89,7 @@ sum(elite_data$J_GB - elite_data$MINISTRO)
 
 anonymised_data <- select(elite_data, id, Sexo, Año_nacimiento, CARGOS, P24_REC, P25.3_REC,
                           parents, father, mother, p5_1, p5_2, p5_3, p5_4, P6.1, P6.2, P6.3,
-                          P6.4, P6.5, P6.6, P6.7, P6.8, P6.9, P6_REC2,PRESIDENTE, MINISTRO,
+                          P6.4, P6.5, P6.6, P6.7, P6.8, P6.9, P6_REC2, PRESIDENTE, MINISTRO,
                           SENADOR, DIPUTADO, SUBSECRETARIO, INTENDENTE, AUTORID..ECO..REG.,
                           JEFES.GAB..O.DIV., MIEMBROS.MESAS.DIR..PP)
 names(anonymised_data)[2] = "sex"
